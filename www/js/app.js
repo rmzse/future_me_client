@@ -29,10 +29,8 @@ angular.module('future_me', ['ionic', 'future_me.controllers'])
 
       .state('description', {
         url: '/description',
-        views: {
           templateUrl: 'templates/description/description.html',
           controller: 'DescriptionController'
-        }
 
       });
       $urlRouterProvider.otherwise('description');
