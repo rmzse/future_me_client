@@ -69,3 +69,27 @@ td-card img {
 .row + .row {
   margin-top: 0px;
 }
+
+.card-image {
+  overflow:hidden;
+  height: 33rem;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 1px;
+  background-image: url('http://lorempixel.com/350/300/technics/');
+  background-size: cover;
+}
+
+.col {
+  padding: 0px;
+}
+
+.row {
+  padding: 0px;
+}
+
+.suggestion-title {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
