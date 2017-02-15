@@ -31,8 +31,13 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
         url: '/suggestions',
         templateUrl: 'templates/suggestions.html',
         controller: 'cardsCtrl'
-      });
+      })
 
+      .state('loading', {
+        url: '/loading',
+        templateUrl: 'templates/loading.html',
+        controller: 'loadingCtrl'
+      });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/suggestions');
   });
