@@ -23,16 +23,24 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
   });
 })
 
+  .config(function ($stateProvider, $urlRouterProvider) {
 
-  .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-
       .state('suggestions', {
         url: '/suggestions',
         templateUrl: 'templates/suggestions.html',
         controller: 'cardsCtrl'
-      });
+      })
 
-    // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/suggestions');
-  });
+
+    .state('description', {
+        url: '/description',
+        views: {
+          templateUrl: 'templates/description/description.html',
+          controller: 'DescriptionController'
+        }
+
+      });
+      $urlRouterProvider.otherwise('/suggestions');
+
+});

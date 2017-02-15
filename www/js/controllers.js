@@ -7,4 +7,9 @@ angular.module('futureme.controllers', [])
       {title: "sjuksköterska", image: "nurse.png"}
     ]
 
+  })
+
+  .controller('DescriptionController', function() {
+    console.log('description controller');
+
   });
