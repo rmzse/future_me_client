@@ -35,10 +35,8 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
 
     .state('description', {
         url: '/description',
-        views: {
           templateUrl: 'templates/description/description.html',
           controller: 'DescriptionController'
-        }
 
       });
       $urlRouterProvider.otherwise('/suggestions');
