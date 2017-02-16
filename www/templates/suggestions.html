@@ -1,12 +1,12 @@
 <ion-view>
   <ion-content>
     <td-cards>
-      <td-card>
-        <div class="row card-image">
+      <td-card ng-repeat="card in cards">
+        <div class="row card-image" style="background-image: url('img/{{card.image}}');">
           <div class="col">
             <div class="row suggestion-title-row">
               <div class="col">
-                <h4 class="suggestion-title">Vill du bli bagare?</h4>
+                <h4 class="suggestion-title">Vill du bli {{card.title}}?</h4>
               </div>
             </div>
           </div>
