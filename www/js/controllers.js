@@ -1,10 +1,13 @@
 angular.module('future_me.controllers', [])
 
-  .controller('AppCtrl', function ($scope) {
+  .controller('cardsCtrl', function($scope, TDCardDelegate) {
 
-
+    $scope.cards = [
+      {title: "bagare", image: "chef.jpg"},
+      {title: "sjuksköterska", image: "nurse.png"}
+    ];
   })
+
   .controller('DescriptionController', function() {
     console.log('description controller');
-
   });
