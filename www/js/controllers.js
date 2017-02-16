@@ -16,7 +16,4 @@ angular.module('futureme.controllers', [])
   .controller('DescriptionController', function() {
     console.log('description controller');
 
-    $scope.navigateTo = function (start) {
-      $state.go('suggestions', {index: start});
-    };
   });
