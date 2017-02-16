@@ -1,5 +1,4 @@
 .pane {
-  background-image: url('../img/Bagare2.jpg');
   overflow: hidden;
   background-size: cover;
 }
@@ -12,51 +11,66 @@
   color: white;
   font-size: 30px;
   padding-left: 30px;
-  height: 100px;
 }
 
 .col-90 {
   color: white;
+  height: 270px;
   font-size: 20px;
   padding-left: 30px;
-  height: 50px;
 }
 
 .top-space {
   padding-top: 100px;
 }
 
-.button-balanced {
-   border-radius: 50%;
-   width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 0.25rem;
-   margin-right: 0.25rem;
- }
+.row+.row {
+  margin-top: 30px;
+  padding-top: 0;
+}
 
- .button-royal {
+.button-dark {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.button-balanced {
   border-radius: 50%;
   width: 4.5rem;
- height: 4.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.25rem;
- }
-
- .button-positive {
-   border-radius: 50%;
-   width: 4.5rem;
-   height: 4.5rem;
-  margin-left: 0.25rem;
-   margin-right: 0.25rem;
- }
-
- .button-assertive {
- border-radius: 50%;
- width: 4.5rem;
   height: 4.5rem;
   margin-left: 0.25rem;
- margin-right: 0.25rem;
- }
+  margin-right: 0.25rem;
+}
+
+.button-royal {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.button-positive {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.button-assertive {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
 
 td-cards {
   display: block;
