@@ -1,12 +1,16 @@
 angular.module('futureme.controllers', [])
 
-  .controller('cardsCtrl', function ($scope, TDCardDelegate) {
+  .controller('cardsCtrl', function ($scope, $state,  TDCardDelegate) {
 
     $scope.cards = [
       {title: "bagare", image: "chef.png"},
       {title: "sjuksköterska", image: "nurse.png"}
     ]
 
+
+    $scope.navigateTo = function (index) {
+      $state.go('description', {index: index});
+    }
   })
 
   .controller('DescriptionController', function() {
