@@ -194,6 +194,23 @@ td-card img {
 }
 
 .row-lib {
-  padding-top: 150px;
-  padding-left: 30px;
+  padding-top: 70px;
+  padding-left: 45px;
+}
+
+.button-light {
+  height: 80px;
+  width: 150px;
+  /*-top: 80p*/
+  margin-right: 40px;
+  background-size: cover;
+}
+
+.button.button-light {
+  color: #fff;
+}
+
+.button {
+  font-size: 13px;
+  font-weight: bold;
 }
