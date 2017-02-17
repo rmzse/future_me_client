@@ -4,7 +4,7 @@
       <td-card ng-repeat="card in cards.active" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)">
           <div class="row card-image" style="background-image: url('img/{{card.image}}');" ng-controller="cardCtrl">
             <div class="col">
-              <div class="row suggestion-title-row">
+              <div class="row suggestion-title-row sluta-braka">
                 <div class="col">
                   <h4 class="suggestion-title">Vill du bli {{card.title}}?</h4>
                 </div>
@@ -15,7 +15,7 @@
             <div class="col button-group">
               <button class="button button-assertive icon ion-close"></button>
               <button class="button button-royal icon ion-map"></button>
-              <button class="button button-positive icon ion-information"></button>
+              <button class="button button-positive icon ion-information" ng-click="navigateTo($index)"></button>
               <button class="button button-balanced icon ion-heart"></button>
             </div>
           </div>

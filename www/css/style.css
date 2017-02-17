@@ -1,8 +1,4 @@
-.background-grey {
-  background-color: #F7F7F7;
-}
-
-/* Empty. Add your own CSS if you like */
+/*td-cards*/
 
 td-cards {
   display: block;
@@ -29,6 +25,17 @@ td-card img {
   max-width: 100%;
 }
 
+.refresh-card {
+  background-color: white;
+  height: 40rem;
+}
+
+.card-image {
+  overflow: hidden;
+  height: 33rem;
+  background-size: cover;
+}
+
 .yes-text {
   position: absolute;
   top: 10px;
@@ -47,6 +54,12 @@ td-card img {
   opacity: 0;
 }
 
+/*Suggestion screen*/
+
+.background-grey {
+  background-color: #F7F7F7;
+}
+
 .fade {
   -webkit-transition: 0.2s opacity linear;
   transition: 0.2s opacity linear;
@@ -63,16 +76,6 @@ td-card img {
   border-radius: 0 5px 5px 0;
 }
 
-.row + .row {
-  margin-top: 0px;
-}
-
-.card-image {
-  overflow: hidden;
-  height: 33rem;
-  background-size: cover;
-}
-
 .col {
   padding: 0px;
 }
@@ -85,6 +88,32 @@ td-card img {
   text-align: center;
   color: white;
   font-size: 1.5em;
+}
+
+.suggestion-title-row {
+  margin-top: 30rem
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/*buttons*/
+
+.button-dark {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.button-back {
+  margin-top: 0px;
+}
+
+.bar.bar-clear .button {
+    color: #595959;
 }
 
 .button-balanced {
@@ -119,16 +148,40 @@ td-card img {
   margin-right: 0.25rem;
 }
 
-.button-group {
+/*Suggestion screen */
+
+.pane {
+  overflow: hidden;
+  background-size: cover;
+}
+
+.title {
+  color: ivory;
+}
+
+.col-80 {
+  color: white;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 100px;
+}
+
+.col-90 {
+  color: white;
+  height: auto;
+  max-height: 18.3rem;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.row+.row {
+  margin-top: 0px;
+  padding-top: 0;
+}
+
+.button-group_description {
+  margin-top: 2rem;
   text-align: center;
-  margin-top: 1rem;
-}
-
-.suggestion-title-row {
-  margin-top: 30rem
-}
-
-.refresh-card {
-  background-color: white;
-  height: 40rem;
 }
