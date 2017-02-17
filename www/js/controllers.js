@@ -1,6 +1,6 @@
 angular.module('futureme.controllers', [])
 
-  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout) {
+  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, $state) {
 
     var cardTypes = [{id: 1, title: "bagare", image: "Bagare.png"},
       {id: 2, title: "sjuksköterska", image: "Sjuksköterska.png"},
@@ -66,7 +66,11 @@ angular.module('futureme.controllers', [])
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
   })
 
-.controller('DescriptionController', function() {
+.controller('DescriptionController', function($scope, $ionicHistory) {
   console.log('description controller');
+
+  $scope.myGoBack = function() {
+    $ionicHistory.goBack();
+  };
 
 });
