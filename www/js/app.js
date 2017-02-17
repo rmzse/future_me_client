@@ -36,10 +36,9 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
     });
   })
 
-
   .config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider
 
+    $stateProvider
       .state('suggestions', {
         url: '/suggestions',
         templateUrl: 'templates/suggestions.html',
@@ -47,12 +46,11 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
       })
 
 
-    .state('description', {
+      .state('description', {
         url: '/description',
-          templateUrl: 'templates/description/description.html',
-          controller: 'DescriptionController'
+        templateUrl: 'templates/description/description.html',
+        controller: 'DescriptionController'
 
       });
-      $urlRouterProvider.otherwise('/description');
-
-});
+    $urlRouterProvider.otherwise('/suggestions');
+  });

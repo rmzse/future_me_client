@@ -63,14 +63,14 @@ td-card img {
   border-radius: 0 5px 5px 0;
 }
 
-.row+.row {
-  margin-top: 0px;
-  padding-top: 0;
-}
-
 .card-image {
   overflow: hidden;
   height: 33rem;
+  background-size: cover;
+}
+
+.pane {
+  overflow: hidden;
   background-size: cover;
 }
 
@@ -134,16 +134,9 @@ td-card img {
   height: 40rem;
 }
 
-.button-group_description {
-  text-align: center;
-  margin-top: 1rem;
-  padding-top: 50px;
-}
-
 .title {
   color: ivory;
 }
-
 
 .col-80 {
   color: white;
@@ -155,10 +148,18 @@ td-card img {
 .col-90 {
   color: white;
   height: auto;
+  max-height: 18.3rem;
   font-size: 20px;
   padding-top: 30px;
   padding-left: 30px;
+  overflow: hidden;
 }
+
+.row+.row {
+  margin-top: 0px;
+  padding-top: 0;
+}
+
 
 .button-dark {
   margin: 10px;
@@ -167,7 +168,7 @@ td-card img {
   margin-top: 35px;
 }
 
-.pane {
-  overflow: hidden;
-  background-size: cover;
+.button-group_description {
+  margin-top: 2rem;
+  text-align: center;
 }
