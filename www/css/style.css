@@ -1,48 +1,91 @@
-.pane {
-  overflow: hidden;
-  background-size: cover;
+.background-grey {
+  background-color: #F7F7F7;
 }
 
-.title {
-  color: ivory;
+/* Empty. Add your own CSS if you like */
+
+td-cards {
+  display: block;
 }
 
-.col-80 {
-  color: white;
+td-card {
+  position: absolute;
+  left: 50%;
+  margin-top: 1rem;
+  margin-left: -11rem;
+  width: 22rem;
+  height: 40rem;
+  background-color: white;
+
+  border: 1px solid #999;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+td-card .image {
+  position: relative;
+}
+
+td-card img {
+  max-width: 100%;
+}
+
+.yes-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   font-size: 30px;
-  padding-left: 30px;
-  padding-top: 100px;
+  color: #4CAF50;
+  opacity: 0;
 }
 
-.col-90 {
-  color: white;
-  height: auto;
-  font-size: 20px;
-  padding-top: 30px;
-  padding-left: 30px;
+.no-text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #F44336;
+  opacity: 0;
+}
+
+.fade {
+  -webkit-transition: 0.2s opacity linear;
+  transition: 0.2s opacity linear;
+  opacity: 0;
+}
+
+.discard {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 15px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 5px 5px 0;
 }
 
 .row+.row {
-  margin-top: 30px;
+  margin-top: 0px;
   padding-top: 0;
 }
 
-.button-dark {
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px;
+.card-image {
+  overflow: hidden;
+  height: 33rem;
+  background-size: cover;
 }
 
-.button-group {
-  text-align: center;
-  margin-top: 1rem;
+.col {
+  padding: 0px;
 }
 
-.button-group_description {
+.row {
+  padding: 0px;
+}
+
+.suggestion-title {
   text-align: center;
-  margin-top: 1rem;
-  padding-top: 50px;
+  color: white;
+  font-size: 1.5em;
 }
 
 .button-balanced {
@@ -77,98 +120,6 @@
   margin-right: 0.25rem;
 }
 
-td-cards {
-  display: block;
-}
-
-td-card {
-  position: absolute;
-  left: 50%;
-  margin-top: 1rem;
-  margin-left: -11rem;
-  width: 22rem;
-  height: 40rem;
-  background-color: white;
-
-  border: 1px solid #999;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-/*
-td-card.card-0 {
-  -webkit-transform: translate3d(0, 0px, 0);
-  transform: translate3d(0, 0px, 0);
-  top: 0px;
-  z-index: 10;
-}
-td-card.card-1 {
-  -webkit-transform: translate3d(0, 4px, 0);
-  transform: translate3d(0, 4px, 0);
-  z-index: 9;
-}
-td-card.card-2 {
-  -webkit-transform: translate3d(0, 8px, 0);
-  transform: translate3d(0, 8px, 0);
-  z-index: 8;
-}
-*/
-
-td-card .image {
-  position: relative;
-}
-
-td-card img {
-  max-width: 100%;
-}
-
-.yes-text {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 30px;
-  color: rgb(111, 250, 111);
-  opacity: 0;
-}
-
-.no-text {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  color: rgb(255, 115, 115);
-  opacity: 0;
-}
-
-.fade {
-  -webkit-transition: 0.2s opacity linear;
-  transition: 0.2s opacity linear;
-  opacity: 0;
-}
-
-.row + .row {
-  margin-top: 0px;
-}
-
-.card-image {
-  overflow: hidden;
-  height: 33rem;
-  background-size: cover;
-}
-
-.col {
-  padding: 0px;
-}
-
-.row {
-  padding: 0px;
-}
-
-.suggestion-title {
-  text-align: center;
-  color: white;
-  font-size: 1.5em;
-}
-
 .button-group {
   text-align: center;
   margin-top: 1rem;
@@ -176,4 +127,47 @@ td-card img {
 
 .suggestion-title-row {
   margin-top: 30rem
+}
+
+.refresh-card {
+  background-color: white;
+  height: 40rem;
+}
+
+.button-group_description {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 50px;
+}
+
+.title {
+  color: ivory;
+}
+
+
+.col-80 {
+  color: white;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 100px;
+}
+
+.col-90 {
+  color: white;
+  height: auto;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.button-dark {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.pane {
+  overflow: hidden;
+  background-size: cover;
 }
