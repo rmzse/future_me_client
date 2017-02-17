@@ -57,6 +57,6 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
         templateUrl: 'templates/library/library.html',
         controller: 'libraryController'
       });
-      
-    $urlRouterProvider.otherwise('/suggestions');
+
+    $urlRouterProvider.otherwise('/library');
   });
