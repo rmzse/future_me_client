@@ -1,11 +1,7 @@
 angular.module('futureme.controllers', [])
 
   .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, $state) {
-
-    var cardTypes = [{id: 1, title: "bagare", image: "Bagare.png"},
-      {id: 2, title: "sjuksköterska", image: "Sjuksköterska.png"},
-      {id: 3, title: "möbeldesigner", image: "Mobeldes.png"},
-      {id: 4, title: "läkare", image: "Sjuksköterska.png"}];
+    
     var cardTypes = [{
         id: 1,
         title: "bagare",
