@@ -50,7 +50,13 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'ionic.contrib.ui.t
         url: '/description',
         templateUrl: 'templates/description/description.html',
         controller: 'DescriptionController'
+      })
 
+      .state('library', {
+        url: '/library',
+        templateUrl: 'templates/library/library.html',
+        controller: 'libraryController'
       });
+      
     $urlRouterProvider.otherwise('/suggestions');
   });

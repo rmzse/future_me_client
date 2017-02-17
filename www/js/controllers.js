@@ -1,7 +1,7 @@
 angular.module('futureme.controllers', [])
 
   .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, $state) {
-    
+
     var cardTypes = [{
         id: 1,
         title: "bagare",
@@ -68,5 +68,9 @@ angular.module('futureme.controllers', [])
   $scope.myGoBack = function() {
     $ionicHistory.goBack();
   };
+
+})
+
+.controller('libraryController', function($scope) {
 
 });
