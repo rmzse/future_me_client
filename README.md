@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-[Add instruction to setup the project for developers]
+Fork the project. run npm install and bower install. 
 
 ## Running the tests
 
@@ -29,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Built With
 
   * [Travis](https://travis-ci.org) - Used for continous integration
-  * Add more...
+  * [ionic-ion-tinder-cards-2] (https://github.com/loringdodge/ionic-ion-tinder-cards-2) - Used for implementing the tinder cards functionality
 
 ## Authors
   * **Craft Academy** - [CraftAcademy](https://github.com/CraftAcademy)

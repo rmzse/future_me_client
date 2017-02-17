@@ -27,6 +27,10 @@
   padding-top: 0;
 }
 
+.row + .row {
+  margin-top: 0px;
+}
+
 .button-dark {
   margin: 10px;
   margin-left: auto;
@@ -76,6 +80,10 @@
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
+=======
+.background-grey {
+  background-color: #F7F7F7;
+}
 
 td-cards {
   display: block;
@@ -94,25 +102,6 @@ td-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/*
-td-card.card-0 {
-  -webkit-transform: translate3d(0, 0px, 0);
-  transform: translate3d(0, 0px, 0);
-  top: 0px;
-  z-index: 10;
-}
-td-card.card-1 {
-  -webkit-transform: translate3d(0, 4px, 0);
-  transform: translate3d(0, 4px, 0);
-  z-index: 9;
-}
-td-card.card-2 {
-  -webkit-transform: translate3d(0, 8px, 0);
-  transform: translate3d(0, 8px, 0);
-  z-index: 8;
-}
-*/
-
 td-card .image {
   position: relative;
 }
@@ -126,7 +115,7 @@ td-card img {
   top: 10px;
   left: 10px;
   font-size: 30px;
-  color: rgb(111, 250, 111);
+  color: #4CAF50;
   opacity: 0;
 }
 
@@ -135,7 +124,7 @@ td-card img {
   top: 10px;
   right: 10px;
   font-size: 30px;
-  color: rgb(255, 115, 115);
+  color: #F44336;
   opacity: 0;
 }
 
@@ -145,8 +134,14 @@ td-card img {
   opacity: 0;
 }
 
-.row + .row {
-  margin-top: 0px;
+.discard {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 15px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 5px 5px 0;
 }
 
 .card-image {
@@ -169,11 +164,11 @@ td-card img {
   font-size: 1.5em;
 }
 
-.button-group {
-  text-align: center;
-  margin-top: 1rem;
-}
-
 .suggestion-title-row {
   margin-top: 30rem
+}
+
+.refresh-card {
+  background-color: white;
+  height: 40rem;
 }
