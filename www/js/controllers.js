@@ -35,6 +35,10 @@ angular.module('futureme.controllers', [])
         $scope.refreshCards();
     };
 
+    $scope.$on('removeCard', function(event, element, card) {
+      $scope.cards.master.splice($scope.cards.master.indexOf(card), 1);
+    });
+
     $scope.addCard = function () {
       var newCard = cardTypes[0];
       $scope.cards.active.push(angular.extend({}, newCard));
