@@ -49,12 +49,19 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
         url: '/description',
         templateUrl: 'templates/description/description.html',
         controller: 'descriptionCtrl'
-    })
+      })
+
+      .state('library', {
+        url: '/library',
+        templateUrl: 'templates/library/library.html',
+        controller: 'libraryController'
+      })
 
       .state('path', {
         url: '/path',
         templateUrl: 'templates/path.html',
         controller: 'pathCtrl'
       });
+
     $urlRouterProvider.otherwise('/suggestions');
   });

@@ -71,5 +71,8 @@ angular.module('futureme.controllers', [])
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
-  });
+  })
 
+  .controller('libraryController', function ($scope) {
+
+  });
