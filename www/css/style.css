@@ -113,7 +113,7 @@ td-card img {
 }
 
 .bar.bar-clear .button {
-    color: #595959;
+  color: #595959;
 }
 
 .button-balanced {
@@ -176,13 +176,30 @@ td-card img {
   overflow: hidden;
 }
 
-.row+.row {
+.row + .row {
   margin-top: 0px;
   padding-top: 0;
 }
 
 .button-group_description {
   margin-top: 2rem;
+  text-align: center;
+}
+
+.item.item-trns {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.path-text {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.button-group_path {
+  margin-top: 8rem;
   text-align: center;
 }
 
@@ -203,13 +220,12 @@ td-card img {
   width: 150px;
   margin-right: 40px;
   background-size: cover;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .button.button-light {
   color: #fff;
 }
 
-.button {
-  font-size: 13px;
-  font-weight: bold;
-}
+
