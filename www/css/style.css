@@ -99,6 +99,17 @@ td-card img {
   margin-top: 1rem;
 }
 
+.ion-bookmark {
+  margin-right: 6px;
+  margin-top: 10px;
+  border: none;
+  background: white;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 50rem;
+}
+
 /*buttons*/
 
 .button-dark {
@@ -227,5 +238,3 @@ td-card img {
 .button.button-light {
   color: #fff;
 }
-
-
