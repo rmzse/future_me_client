@@ -1,6 +1,6 @@
 angular.module("futureme.services", [])
 
-.factory ('StorageService', function ($localStorage) {
+.factory ('StorageService', function ($localStorage, $filter) {
   $localStorage = $localStorage.$default({
     things: [
       {
@@ -43,9 +43,16 @@ angular.module("futureme.services", [])
   var _remove = function (thing) {
     $localStorage.things.splice($localStorage.things.indexOf(thing), 1);
   };
+
+  var _getOccupation = function (id) {
+    array = $localStorage.things;
+    return $filter('filter')(array, {'id': id});
+  };
+
   return {
     getAll: _getAll,
     add: _add,
-    remove: _remove
+    remove: _remove,
+    getOccupation: _getOccupation
   };
 });

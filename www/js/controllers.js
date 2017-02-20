@@ -41,8 +41,10 @@ angular.module('futureme.controllers', [])
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
   })
 
-  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams) {
+  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
     console.log($stateParams);
+
+    console.log(StorageService.getOccupation($stateParams.id));
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
