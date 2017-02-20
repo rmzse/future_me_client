@@ -13,19 +13,15 @@
       <div class="col-80">Det här gör en {{occupation.title}}</div>
     </div>
     <div class="row top-space">
-      <div class="col-90">
+      <ion-scroll direction="y" class="col-90">
         {{occupation.description}}
-      </div>
-    </div>
-    <div class="row top-space">
-      <button class="button button-dark">
-        Läs mer
-      </button>
+      </ion-scroll>
     </div>
     <div class="row top-space">
       <div class="col button-group_description">
         <button class="button button-assertive icon ion-close"></button>
         <button class="button button-royal icon ion-map" go-click="/path"></button>
+        <button class="button button-dark icon ion-link"></button>
         <button class="button button-balanced icon ion-heart"></button>
       </div>
     </div>
