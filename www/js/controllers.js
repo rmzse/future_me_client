@@ -1,6 +1,6 @@
 angular.module('futureme.controllers', [])
 
-  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, StorageService) {
+  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, StorageService, $ionicLoading) {
 
     var cards = StorageService.getAll();
 
@@ -38,6 +38,10 @@ angular.module('futureme.controllers', [])
     };
 
     $scope.saveThisOccupation = function (occupation) {
+      $ionicLoading.show({
+        template: 'jobb sparat!',
+        duration: 600
+      });
       StorageService.saveOccupation(occupation);
     };
   })
