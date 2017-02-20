@@ -45,6 +45,10 @@ angular.module('futureme.controllers', [])
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
 
+    $scope.saveThisOccupation = function () {
+      StorageService.saveOccupation($scope.occupation);
+    };
+
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
