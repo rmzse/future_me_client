@@ -56,6 +56,8 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('libraryController', function ($scope) {
-
+  .controller('libraryController', function ($scope, $ionicHistory) {
+    $scope.myGoBack = function () {
+      $ionicHistory.goBack();
+    };
   });
