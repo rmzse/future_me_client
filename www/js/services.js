@@ -7,7 +7,7 @@ angular.module("futureme.services", [])
         id: 1,
         title: "bagare",
         image: "Bagare.png",
-        description: "Att jobba som bagare är ett roligt men utmattande jobb. Det är tidiga morgnar, men man får chans att mätta många magar. Vara kreativ och baka det man vill. Det är mycket kunskaper man bör bahärska för att få brödet så krispigt, något som kan löna sig från en utbildning.",
+        description: "Bagare kan arbeta på ett industribageri, ett mindre bageri med tillhörande butik eller på ett konditori. Arbetsuppgifterna skiljer sig åt beroende på var man arbetar men det som tillverkas i en process från ax till limpa är matbröd, vetebröd och kakor.",
         google: 'https://www.google.se/#q=hur+blir+man+bagare'
       },
       {
