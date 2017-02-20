@@ -41,7 +41,10 @@ angular.module('futureme.controllers', [])
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
   })
 
-  .controller('descriptionCtrl', function ($scope, $ionicHistory) {
+  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
+
+    $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
+
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
@@ -53,6 +56,8 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('libraryController', function ($scope) {
-
+  .controller('libraryController', function ($scope, $ionicHistory) {
+    $scope.myGoBack = function () {
+      $ionicHistory.goBack();
+    };
   });
