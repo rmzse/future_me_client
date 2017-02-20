@@ -1,28 +1,27 @@
 <ion-view title="Description">
-  <ion-content class="pane">
+  <ion-content scroll="false" class="pane" style="background-image: url('img/{{occupation.image}}');">
     <ion-header-bar class='bar-clear'>
       <div class="buttons">
-        <a class="button icon-left ion-chevron-left button-clear button-dark"></a>
+        <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack()"></a>
       </div>
-      <h1 class="title">Occupation Header</h1>
+      <h1 class="title">{{occupation.title}}</h1>
+      <div class="buttons">
+        <a class="button icon-right ion-ios-bookmarks button-clear" go-click="/library"></a>
+      </div>
     </ion-header-bar>
-    <div class="row top-space">
-      <div class="col-80">Det här gör en </div>
+    <div>
+      <div class="col-80">Det här gör en {{occupation.title}}</div>
     </div>
     <div class="row top-space">
-      <div class="col-90">
-
-      </div>
+      <ion-scroll class="col-90">
+        {{occupation.description}}
+      </ion-scroll>
     </div>
     <div class="row top-space">
-      <button class="button button-dark">
-        Läs mer
-      </button>
-    </div>
-    <div class="row top-space">
-      <div class="col button-group">
+      <div class="col button-group_description">
         <button class="button button-assertive icon ion-close"></button>
-        <button class="button button-royal icon ion-map"></button>
+        <button class="button button-royal icon ion-map" go-click="/path"></button>
+        <button class="button button-dark icon ion-link"></button>
         <button class="button button-balanced icon ion-heart"></button>
       </div>
     </div>

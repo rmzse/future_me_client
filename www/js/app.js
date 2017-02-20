@@ -1,12 +1,25 @@
-// Ionic Starter App
+// Ionic futureme App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('future_me', ['ionic', 'future_me.controllers', 'ionic.contrib.ui.tinderCards'])
+angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directives', 'futureme.services', 'ionic.contrib.ui.tinderCards2', 'ngStorage'])
 
-  .run(function($ionicPlatform) {
-    $ionicPlatform.ready(function() {
+  .directive('noScroll', function ($document) {
+
+    return {
+      restrict: 'A',
+      link: function ($scope, $element, $attr) {
+
+        $document.on('touchmove', function (e) {
+          e.preventDefault();
+        });
+      }
+    }
+  })
+
+  .run(function ($ionicPlatform) {
+    $ionicPlatform.ready(function () {
       if (window.cordova && window.cordova.plugins.Keyboard) {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -23,25 +36,32 @@ angular.module('future_me', ['ionic', 'future_me.controllers', 'ionic.contrib.ui
     });
   })
 
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
+      .state('suggestions', {
+        url: '/suggestions',
+        templateUrl: 'templates/suggestions.html',
+        controller: 'cardsCtrl'
+      })
 
-    .state('suggestions', {
-      url: '/suggestions',
-      templateUrl: 'templates/suggestions.html',
-      controller: 'cardsCtrl'
-    })
-    .state('description', {
-      url: '/description',
-      templateUrl: 'templates/description/description.html',
-      controller: 'DescriptionController'
-    })
-    .state('loading', {
-      url: '/loading',
-      templateUrl: 'templates/loading.html',
-      controller: 'loadingCtrl'
-    });
+      .state('description', {
+        url: '/description/:id',
+        templateUrl: 'templates/description/description.html',
+        controller: 'descriptionCtrl'
+      })
 
-    $urlRouterProvider.otherwise('description');
+      .state('library', {
+        url: '/library',
+        templateUrl: 'templates/library/library.html',
+        controller: 'libraryController'
+      })
+
+      .state('path', {
+        url: '/path',
+        templateUrl: 'templates/path.html',
+        controller: 'pathCtrl'
+      });
+
+    $urlRouterProvider.otherwise('/suggestions');
   });

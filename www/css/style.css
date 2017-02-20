@@ -1,48 +1,4 @@
-.pane {
-  background-image: url('../img/chef.jpg');
-  overflow: hidden;
-  background-size: cover;
-}
-
-.title {
-  color: ivory;
-}
-
-.col-80 {
-  color: white;
-  font-size: 30px;
-  padding-left: 30px;
-}
-
-.col-90 {
-  color: white;
-  height: 270px;
-  font-size: 20px;
-  padding-left: 30px;
-}
-
-.top-space {
-  padding-top: 100px;
-}
-
-.row+.row {
-  margin-top: 30px;
-  padding-top: 0;
-}
-
-.button-dark {
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button-group {
-  width: 200px;
-  margin-top: 1rem;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
+/*td-cards*/
 
 td-cards {
   display: block;
@@ -61,25 +17,6 @@ td-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/*
-td-card.card-0 {
-  -webkit-transform: translate3d(0, 0px, 0);
-  transform: translate3d(0, 0px, 0);
-  top: 0px;
-  z-index: 10;
-}
-td-card.card-1 {
-  -webkit-transform: translate3d(0, 4px, 0);
-  transform: translate3d(0, 4px, 0);
-  z-index: 9;
-}
-td-card.card-2 {
-  -webkit-transform: translate3d(0, 8px, 0);
-  transform: translate3d(0, 8px, 0);
-  z-index: 8;
-}
-*/
-
 td-card .image {
   position: relative;
 }
@@ -88,12 +25,23 @@ td-card img {
   max-width: 100%;
 }
 
+.refresh-card {
+  background-color: white;
+  height: 40rem;
+}
+
+.card-image {
+  overflow: hidden;
+  height: 33rem;
+  background-size: cover;
+}
+
 .yes-text {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 30px;
-  color: rgb(111, 250, 111);
+  color: #4CAF50;
   opacity: 0;
 }
 
@@ -102,8 +50,14 @@ td-card img {
   top: 10px;
   right: 10px;
   font-size: 30px;
-  color: rgb(255, 115, 115);
+  color: #F44336;
   opacity: 0;
+}
+
+/*Suggestion screen*/
+
+.background-grey {
+  background-color: #F7F7F7;
 }
 
 .fade {
@@ -112,14 +66,14 @@ td-card img {
   opacity: 0;
 }
 
-.row + .row {
-  margin-top: 0px;
-}
-
-.card-image {
-  overflow: hidden;
-  height: 33rem;
-  background-size: cover;
+.discard {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 15px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 5px 5px 0;
 }
 
 .col {
@@ -134,6 +88,48 @@ td-card img {
   text-align: center;
   color: white;
   font-size: 1.5em;
+}
+
+.suggestion-title-row {
+  margin-top: 30rem
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ion-ios-bookmarks {
+  margin-right: 10px;
+  border: none;
+  background: #595959;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+}
+
+.bar button {
+  margin-top: 1rem;
+  font-size: 25px;
+}
+
+/*buttons*/
+
+.button-dark {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.button-back {
+  margin-top: 0px;
+}
+
+.bar.bar-clear .button {
+  color: #595959;
 }
 
 .button-balanced {
@@ -168,6 +164,83 @@ td-card img {
   margin-right: 0.25rem;
 }
 
-.suggestion-title-row {
-  margin-top: 30rem
+/*Suggestion screen */
+
+.pane {
+  overflow: hidden;
+  background-size: cover;
+}
+
+.title {
+  color: ivory;
+}
+
+.col-80 {
+  color: white;
+  font-size: 30px;
+  line-height: 100%;
+  padding-left: 30px;
+  padding-top: 100px;
+}
+
+.col-90 {
+  color: white;
+  height: auto;
+  height: 25rem;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.row + .row {
+  margin-top: 0px;
+  padding-top: 0;
+}
+
+.button-group_description {
+  /*margin-top: 12rem;*/
+  text-align: center;
+}
+
+.item.item-trns {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.path-text {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.button-group_path {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+/*Libary screen*/
+
+.screen {
+  overflow: hidden;
+  background-size: cover;
+}
+
+.row-lib {
+  padding-top: 70px;
+  padding-left: 45px;
+}
+
+.button-light {
+  height: 80px;
+  width: 150px;
+  margin-right: 40px;
+  background-size: cover;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.button.button-light {
+  color: #fff;
 }
