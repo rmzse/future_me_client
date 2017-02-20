@@ -99,15 +99,19 @@ td-card img {
   margin-top: 1rem;
 }
 
-.ion-bookmark {
-  margin-right: 6px;
-  margin-top: 10px;
+.ion-ios-bookmarks {
+  margin-right: 10px;
   border: none;
-  background: white;
+  background: #595959;
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  font-size: 50rem;
+  color: white;
+}
+
+.bar button {
+  margin-top: 1rem;
+  font-size: 25px;
 }
 
 /*buttons*/
