@@ -36,6 +36,10 @@ angular.module('futureme.controllers', [])
 
     $scope.cardSwipedRight = function (index) {
     };
+
+    $scope.saveThisOccupation = function (occupation) {
+      StorageService.saveOccupation(occupation);
+    };
   })
 
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
