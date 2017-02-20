@@ -56,9 +56,12 @@ angular.module("futureme.services", [])
   };
 
   var _saveOccupation = function (occupation) {
+    for (var i = 0; i < $localStorage.saved_occupations.length; i++) {
+      if ($localStorage.saved_occupations[i].id === occupation.id) {
+        return;
+      }
+    }
     $localStorage.saved_occupations.push(occupation);
-    console.log("the saved occupation was: " + occupation);
-    console.log($localStorage.saved_occupations);
   };
 
   return {
