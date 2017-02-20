@@ -49,11 +49,15 @@ angular.module('futureme.controllers', [])
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
   })
 
-  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
+  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
 
     $scope.saveThisOccupation = function () {
+      $ionicLoading.show({
+        template: 'jobb sparat!',
+        duration: 600
+      });
       StorageService.saveOccupation($scope.occupation);
     };
 
