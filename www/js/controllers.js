@@ -39,7 +39,7 @@ angular.module('futureme.controllers', [])
 
     $scope.saveThisOccupation = function (occupation) {
       $ionicLoading.show({
-        template: 'jobb sparat!',
+        template: 'Jobb sparat!',
         duration: 600
       });
       StorageService.saveOccupation(occupation);
@@ -55,7 +55,7 @@ angular.module('futureme.controllers', [])
 
     $scope.saveThisOccupation = function () {
       $ionicLoading.show({
-        template: 'jobb sparat!',
+        template: 'Jobb sparat!',
         duration: 600
       });
       StorageService.saveOccupation($scope.occupation);
@@ -72,7 +72,7 @@ angular.module('futureme.controllers', [])
 
     $scope.saveThisOccupation = function () {
       $ionicLoading.show({
-        template: 'jobb sparat!',
+        template: 'Jobb sparat!',
         duration: 600
       });
       StorageService.saveOccupation($scope.occupation);
