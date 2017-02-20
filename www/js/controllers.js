@@ -66,11 +66,15 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
+  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
 
     $scope.saveThisOccupation = function () {
+      $ionicLoading.show({
+        template: 'jobb sparat!',
+        duration: 600
+      });
       StorageService.saveOccupation($scope.occupation);
     };
 
