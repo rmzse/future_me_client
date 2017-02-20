@@ -1,10 +1,10 @@
 <ion-pane style="background-image: url('img/Bagare.png');">
-  <ion-content scroll="false" class="pane" style="background-image: url('img/Bagare.png');">
+  <ion-content scroll="false" class="pane" style="background-image: url('img/{{occupation.image}}');">
     <ion-header-bar class='bar-clear'>
       <div class="buttons">
         <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack()"></a>
       </div>
-      <h1 class="title">Occupation Header</h1>
+      <h1 class="title">{{occupation.title}}</h1>
       <div class="buttons">
         <a class="button icon-right ion-bookmark button-clear" go-click="/library"></a>
       </div>
@@ -12,7 +12,7 @@
     <ion-item class="item item-trns text-center">
       </br>
       </br>
-      <h1 class="path-text">Bli en bagare</h1>
+      <h1 class="path-text">Bli en {{occupation.title}}</h1>
       </br>
       </br>
       Börja här!
@@ -35,7 +35,7 @@
     </ion-item>
     <div class="col button-group_path">
       <button class="button button-assertive icon ion-close"></button>
-      <button class="button button-positive icon ion-information" go-click="/description"></button>
+      <button class="button button-positive icon ion-information" go-click="/description/{{occupation.id}}"></button>
       <button class="button button-balanced icon ion-heart"></button>
     </div>
   </ion-content>

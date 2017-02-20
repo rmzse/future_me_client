@@ -50,7 +50,10 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('pathCtrl', function ($scope, $ionicHistory) {
+  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
+
+    $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
+
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
