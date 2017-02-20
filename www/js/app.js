@@ -46,7 +46,7 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
       })
 
       .state('description', {
-        url: '/description',
+        url: '/description/:id',
         templateUrl: 'templates/description/description.html',
         controller: 'descriptionCtrl'
       })
