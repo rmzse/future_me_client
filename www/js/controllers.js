@@ -42,9 +42,9 @@ angular.module('futureme.controllers', [])
   })
 
   .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
-    console.log($stateParams);
 
-    console.log(StorageService.getOccupation($stateParams.id));
+    $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
+
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
