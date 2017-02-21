@@ -87,11 +87,11 @@ td-card img {
 .suggestion-title {
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .suggestion-title-row {
-  margin-top: 30rem
+  margin-top: 6rem
 }
 
 .button-group {
@@ -165,6 +165,13 @@ td-card img {
 }
 
 /*Suggestion screen */
+
+.ion-footprint {
+  background-image: url('../img/footsteps_icon_white_360.png');
+  background-position: center;
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+}
 
 .pane {
   overflow: hidden;
