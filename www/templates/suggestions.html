@@ -1,7 +1,7 @@
 <ion-pane ng-controller="cardsCtrl" class="background-grey">
   <ion-nav-bar class='bar-clear'>
     <ion-nav-buttons side="right">
-      <button class="ion-bookmark" go-click="/library"></button>
+      <button class="ion-ios-bookmarks" go-click="/library"></button>
     </ion-nav-buttons>
   </ion-nav-bar>
   <div ng-if="cards.active">
@@ -19,9 +19,9 @@
           <div class="row">
             <div class="col button-group">
               <button class="button button-assertive icon ion-close" ng-click="onClickTransitionOut(card)"></button>
-              <button class="button button-royal icon ion-map" go-click="/path"></button>
+              <button class="button button-royal icon ion-map" go-click="/path/{{card.id}}"></button>
               <button class="button button-positive icon ion-information" go-click="/description/{{card.id}}"></button>
-              <button class="button button-balanced icon ion-heart"></button>
+              <button class="button button-balanced icon ion-heart" ng-click="saveThisOccupation(card); onClickTransitionOut(card)"></button>
             </div>
           </div>
       </td-card>

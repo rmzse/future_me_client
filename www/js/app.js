@@ -58,7 +58,7 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
       })
 
       .state('path', {
-        url: '/path',
+        url: '/path/:id',
         templateUrl: 'templates/path.html',
         controller: 'pathCtrl'
       });
