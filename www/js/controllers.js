@@ -64,6 +64,10 @@ angular.module('futureme.controllers', [])
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
+
+    $scope.gotoGoogle = function(link) {
+      window.open(link, '_system');
+    }
   })
 
   .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
