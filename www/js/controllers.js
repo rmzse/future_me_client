@@ -63,8 +63,12 @@ angular.module('futureme.controllers', [])
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
+    };
+
+    $scope.myGoBackSkip = function () {
+      $ionicHistory.goBack();
       $timeout(function(){
-        var result = document.getElementById('button');
+        var result = document.getElementById('skip_button');
         var test = angular.element(result);
         console.log(test);
         test.triggerHandler('click');
@@ -90,8 +94,12 @@ angular.module('futureme.controllers', [])
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
+    };
+
+    $scope.myGoBackSkip = function () {
+      $ionicHistory.goBack();
       $timeout(function(){
-        var result = document.getElementById('button');
+        var result = document.getElementById('skip_button');
         var test = angular.element(result);
         console.log(test);
         test.triggerHandler('click');
