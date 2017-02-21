@@ -220,6 +220,10 @@ td-card img {
   text-align: center;
 }
 
+.path-image {
+  max-height: 22.5rem;
+}
+
 /*Libary screen*/
 
 .screen {
