@@ -62,7 +62,6 @@ angular.module("futureme.services", [])
       }
     }
     $localStorage.saved_occupations.push(occupation);
-    console.log($localStorage.saved_occupations);
   };
 
   return {
