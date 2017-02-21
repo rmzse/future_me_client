@@ -1,6 +1,6 @@
 angular.module('futureme.controllers', [])
 
-  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, StorageService) {
+  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, StorageService, $ionicLoading) {
 
     var cards = StorageService.getAll();
 
@@ -36,14 +36,30 @@ angular.module('futureme.controllers', [])
 
     $scope.cardSwipedRight = function (index) {
     };
+
+    $scope.saveThisOccupation = function (occupation) {
+      $ionicLoading.show({
+        template: 'Jobb sparat!',
+        duration: 600
+      });
+      StorageService.saveOccupation(occupation);
+    };
   })
 
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
   })
 
-  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
+  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
+
+    $scope.saveThisOccupation = function () {
+      $ionicLoading.show({
+        template: 'Jobb sparat!',
+        duration: 600
+      });
+      StorageService.saveOccupation($scope.occupation);
+    };
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
@@ -54,9 +70,17 @@ angular.module('futureme.controllers', [])
     }
   })
 
-  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService) {
+  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
+
+    $scope.saveThisOccupation = function () {
+      $ionicLoading.show({
+        template: 'Jobb sparat!',
+        duration: 600
+      });
+      StorageService.saveOccupation($scope.occupation);
+    };
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();

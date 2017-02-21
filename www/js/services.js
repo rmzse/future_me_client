@@ -2,7 +2,8 @@ angular.module("futureme.services", [])
 
 .factory ('StorageService', function ($localStorage, $filter) {
   $localStorage = $localStorage.$default({
-    things: [
+
+    occupations: [
       {
         id: 1,
         title: "bagare",
@@ -35,28 +36,39 @@ angular.module("futureme.services", [])
         google: 'https://www.google.se/#q=hur+blir+man+l%C3%A4kare',
         path_steps: ""
       }
-    ]
+    ],
+    saved_occupations: []
   });
 
   var _getAll = function () {
-    return $localStorage.things;
+    return $localStorage.occupations;
   };
-  var _add = function (thing) {
-    $localStorage.things.push(thing);
+  var _add = function (occupation) {
+    $localStorage.occupations.push(occupation);
   };
-  var _remove = function (thing) {
-    $localStorage.things.splice($localStorage.things.indexOf(thing), 1);
+  var _remove = function (occupation) {
+    $localStorage.occupations.splice($localStorage.occupations.indexOf(occupation), 1);
   };
 
   var _getOccupation = function (id) {
-    array = $localStorage.things;
+    array = $localStorage.occupations;
     return $filter('filter')(array, {'id': id});
+  };
+
+  var _saveOccupation = function (occupation) {
+    for (var i = 0; i < $localStorage.saved_occupations.length; i++) {
+      if ($localStorage.saved_occupations[i].id === occupation.id) {
+        return;
+      }
+    }
+    $localStorage.saved_occupations.push(occupation);
   };
 
   return {
     getAll: _getAll,
     add: _add,
     remove: _remove,
-    getOccupation: _getOccupation
+    getOccupation: _getOccupation,
+    saveOccupation: _saveOccupation
   };
 });
