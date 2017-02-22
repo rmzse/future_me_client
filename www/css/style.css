@@ -240,15 +240,14 @@ lib-screen{
   overflow: scroll;
 }
 
-
 .lib-row{
   margin-top: .5rem;
 }
 
 .lib-button-wrapper{
   width: 1%;
-  display: table;
-  display: inline;
+  /*display: table;*/
+  display: inline-table;
   /*border: solid 1px #595959;*/
 }
 

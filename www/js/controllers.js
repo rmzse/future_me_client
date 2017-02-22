@@ -87,22 +87,22 @@ angular.module('futureme.controllers', [])
   .controller('libraryController', function ($scope, $ionicHistory, StorageService) {
 
     $scope.savedCards = StorageService.getSaved();
-
     console.log($scope.savedCards);
-    // $scope.cards = StorageService.getSavedOccupationPairs();
 
-    // $scope.cards = StorageService.getSavedOccupationPairs();$scope.savedCards) {
+    $scope.pairs = [];
 
-  //   var pairs = [];
-  //   for (var i = 0; i < $scope.savedCards.length; i = 2) {
-  //     if ($scope.savedCards[i1] !== undefined) {
-  //       pairs.push([$scope.savedCards[i], $scope.savedCards[i1]]);
-  //     } else {
-  //       pairs.push([$scope.savedCards[i]]);
-  //     }
-  //   }
-  //   return pairs;
-  // };
+    $scope.pairOutput = function(a) {
+        var temp = a.slice();
+        var arr = [];
+
+        while (temp.length) {
+          arr.push(temp.splice(0,2));
+        }
+        return arr;
+    };
+
+    $scope.pairs = $scope.pairOutput($scope.savedCards);
+    console.log($scope.pairs);
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();

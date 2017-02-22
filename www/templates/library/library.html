@@ -5,15 +5,26 @@
     </div>
     <h1 class="title">Library</h1>
   </ion-header-bar>
-  <ion-content  class="lib-content center">
-    <div ng-repeat="savedCard in savedCards" class="lib-row">
-          <div class="lib-button-wrapper">
-            <button class="button button-light lib-button"
-                    style="border:solid 5px #595959; background-image: url('img/{{savedCard.image}}')"></button>
-            <div class="lib-title center">
-              {{savedCard.title}}
-            </div>
+  <ion-content class="lib-content center">
+    <div ng-repeat="pair in pairs" class="lib-row">
+      <!--<div>-->
+              <div class="lib-button-wrapper">
+                <button class="button button-light lib-button"
+                        style="border:solid 5px #595959; background-image: url('img/{{pair[0].image}}')"></button>
+                <div class="lib-title center">
+                  {{pair[0].title}}
+                </div>
+              </div>
+        <!--<div>-->
+        <!--</div>-->
+        <div class="lib-button-wrapper">
+          <button class="button button-light lib-button"
+                  style="border:solid 5px #595959; background-image: url('img/{{pair[1].image}}')"></button>
+          <div class="lib-title center">
+            {{pair[1].title}}
           </div>
+        </div>
+      <!--</div>-->
     </div>
   </ion-content>
 </ion-view>
