@@ -6,9 +6,15 @@ angular.module("futureme.services", [])
     occupations: [
       {
         id: 1,
-        title: "bagare",
-        image: "Bagare.png",
+        title: 'bagare',
+        image: 'Bagare.png',
         description: "Bagare kan arbeta på ett industribageri, ett mindre bageri med tillhörande butik eller på ett konditori. Arbetsuppgifterna skiljer sig åt beroende på var man arbetar men det som tillverkas i en process från ax till limpa är matbröd, vetebröd och kakor.",
+        title_2: 'Arbetsuppgifter',
+        description_2: 'Industribageri - Bagare på ett automatiserat industribageri övervakar bakningen som sker med hjälp av maskiner. De som arbetar på ett industribageri kan även kallas bageriarbetare. De knappar in receptet på den produkt som ska bakas i bakdatorn. Brödtillverkningen sker sedan helt automatiskt på “löpande band”. Ingredienserna blandas efter ett inprogrammerat recept. Degen delas upp och formas. Jäsningen sker medan degen transporteras på en jäsbana. Gräddningen sker i en tunnelugn genom vilken bröden förs på en linje. Sedan går brödet via en bana till paketeringen. Vissa industribagerier har dock ett större antal manuella moment. Att sätta degen kan exempelvis göras för hand, liksom att sköta utbakning och gräddning. Tillverkningen av kaffebröd är inte heller lika automatiserad som tillverkningen av matbröd. Mindre bageri - Även de mindre lokala bagerierna och butikerna är välutrustade med maskiner och kan ibland ha bakdator. Det vanliga är dock att de flesta arbetsmomenten utförs för hand vilket ger ett mer omväxlande arbete. Bagarna gör då allt från att väga upp ingredienserna till att forma, jäsa och grädda brödet eller kakorna. De tar också hand om disken och ser till att hålla arbetsplatsen ren och snygg.',
+        title_3: 'Arbetsplatser',
+        description_3: 'I dag produceras en del matbröd av ett antal stora industribagerier. Men en ökande del bröd bakas även i lokala, närproducerande bagerier. Många butiker bakar även sitt eget bröd och säljer direkt till kunderna utan mellanhänder',
+        title_4: 'Arbetstider',
+        description_4: 'Bagare på industribagerier arbetar ofta natt och helgarbete varannan helg eller liknande förekommer. Även skiftgång kan förekomma. Som bagare på ett litet bageri eller konditori börjar man oftast arbeta mycket tidigt på morgonen.',
         google: 'https://www.google.se/#q=hur+blir+man+bagare',
         path_steps: "Bagare(transparent).png"
       },
@@ -16,8 +22,13 @@ angular.module("futureme.services", [])
         id: 2,
         title: "sjuksköterska",
         image: "Sjuksköterska.png",
-        description: "Om du känner att du vill hjälpa folk med allt från stora till små sår, men kanske int eplugga lika länge som en läkare. Kan nog sjuksköterska vara något för dig. Men för att bli det är det mycket man måste lära sig.",
-        google: 'https://www.google.se/#q=hur+blir+man+sjuksk%C3%B6terska',
+        description: "Sjuksköterskornas arbetsuppgifter och arbetsplatser varierar, men innebär framförallt att främja hälsa samt förebygga sjukdom och ohälsa.",
+        title_2: 'Arbetsuppgifter',
+        description_2: 'Som sjuksköterska arbetar du med omvårdnad inom en mängd olika specialområden. Allt från skolhälsovård, operation och kirurgi till äldrevård och psykiatri. Kärnan i yrket är omvårdnad, vilket innebär kunskap om hur människan bäst kan bevara sin hälsa och hur man undviker ohälsa. Sjuksköterskan är den på ett sjukhus, eller annan plats, som ansvarar för att medicinska ordinationer blir ordentligt genomförda och att patienterna får den vård de behöver. Sjuksköterskan administrerar läkemedel, utför behandlingar och informerar både patienter och anhöriga. I ditt arbete som sjuksköterska kommer du även att få handleda nyanställda och studerande och det kommer tillfällen då du får verka som arbetsledare.',
+        title_3: 'Arbetsplatser',
+        description_3: 'I dag produceras en del matbröd av ett antal stora industribagerier. Men en ökande del bröd bakas även i lokala, närproducerande bagerier. Många butiker bakar även sitt eget bröd och säljer direkt till kunderna utan mellanhänder',
+        title_4: 'Arbetstider',
+        description_4: 'Bagare på industribagerier arbetar ofta natt och helgarbete varannan helg eller liknande förekommer. Även skiftgång kan förekomma. Som bagare på ett litet bageri eller konditori börjar man oftast arbeta mycket tidigt på morgonen.',
         path_steps: "Nurse(transparent).png"
       },
       {
