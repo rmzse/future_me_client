@@ -92,10 +92,10 @@ angular.module('futureme.controllers', [])
     $scope.pairs = [];
 
     $scope.pairOutput = function(a) {
-        var temp = a.slice();
+        var temp = a;
         var arr = [];
 
-        while (temp.length) {
+        while (temp.length < 1) {
           arr.push(temp.splice(0,2));
         }
         return arr;
