@@ -91,7 +91,18 @@ angular.module('futureme.controllers', [])
     console.log($scope.savedCards);
     // $scope.cards = StorageService.getSavedOccupationPairs();
 
+    // $scope.cards = StorageService.getSavedOccupationPairs();$scope.savedCards) {
 
+  //   var pairs = [];
+  //   for (var i = 0; i < $scope.savedCards.length; i = 2) {
+  //     if ($scope.savedCards[i1] !== undefined) {
+  //       pairs.push([$scope.savedCards[i], $scope.savedCards[i1]]);
+  //     } else {
+  //       pairs.push([$scope.savedCards[i]]);
+  //     }
+  //   }
+  //   return pairs;
+  // };
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
