@@ -215,6 +215,10 @@ td-card img {
   padding-bottom: 0.5rem;
 }
 
+.description-subtext-bold {
+  font-weight: bold;
+}
+
 .description-rating-text {
   padding-top: 1rem;
   color: ivory;
