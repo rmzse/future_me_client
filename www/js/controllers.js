@@ -15,7 +15,7 @@ angular.module('futureme.controllers', [])
         $scope.refreshCards();
     };
 
-    $scope.$on('removeCard', function(event, element, card) {
+    $scope.$on('removeCard', function (event, element, card) {
       $scope.cards.active.splice($scope.cards.active.indexOf(card), 0);
     });
 
@@ -46,9 +46,6 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('cardCtrl', function ($scope, TDCardDelegate) {
-  })
-
   .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
@@ -65,7 +62,7 @@ angular.module('futureme.controllers', [])
       $ionicHistory.goBack();
     };
 
-    $scope.gotoGoogle = function(link) {
+    $scope.gotoGoogle = function (link) {
       window.open(link, '_system');
     }
   })
@@ -87,7 +84,15 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('libraryController', function ($scope, $ionicHistory) {
+  .controller('libraryController', function ($scope, $ionicHistory, StorageService) {
+
+    $scope.savedCards = StorageService.getSaved();
+
+    console.log($scope.savedCards);
+    // $scope.cards = StorageService.getSavedOccupationPairs();
+
+
+
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };

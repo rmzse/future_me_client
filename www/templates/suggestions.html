@@ -7,7 +7,7 @@
   <div ng-if="cards.active">
     <td-cards>
       <td-card ng-repeat="card in cards.active" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)">
-          <div class="row card-image" style="background-image: url('img/{{card.image}}');" ng-controller="cardCtrl">
+          <div class="row card-image" style="background-image: url('img/{{card.image}}');">
             <div class="col">
               <div class="row suggestion-title-row sluta-braka">
                 <div class="col">
