@@ -102,8 +102,7 @@ angular.module('futureme.controllers', [])
 
   .controller('libraryController', function ($scope, $ionicHistory, StorageService) {
 
-    $scope.savedCards = StorageService.getSaved();
-
+    $scope.savedCards = Array.prototype.slice.call(StorageService.getSaved(), 0);
     $scope.pairs = [];
 
     $scope.pairOutput = function (a) {
@@ -122,7 +121,6 @@ angular.module('futureme.controllers', [])
     };
 
     $scope.pairs = $scope.pairOutput($scope.savedCards);
-    console.log($scope.pairs);
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
