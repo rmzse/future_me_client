@@ -225,22 +225,59 @@ td-card img {
 .screen {
   overflow: hidden;
   background-size: cover;
+  scroll:auto;
 }
 
-.row-lib {
-  padding-top: 70px;
-  padding-left: 45px;
+lib-screen{
+  background: #fff;
 }
 
+.lib-content {
+  background-color: #fff;
+  /*border:solid 1px deeppink;*/
+  padding-right: .9rem;
+  padding-left: .9rem;
+  overflow: scroll;
+}
 
+.lib-button-wrapper{
+  width: 1%;
+  display: table;
+  display: inline;
+  /*border: solid 1px #595959;*/
+}
+
+.lib-button{
+  margin-top: 2.5rem;
+  overflow: hidden;
+  width: 7rem;
+  height:7rem;
+  border-radius:50%;
+  background-size: cover;
+  font-size: .91rem;
+  font-weight: bold;
+}
+
+.lib-row{
+
+}
+
+.lib-title {
+  margin-top: .6rem;
+  color: #595959;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.center {
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*display: block;*/
+  text-align: center;
+}
 
 .button-light {
-  height: 80px;
-  width: 150px;
-  margin-right: 40px;
-  background-size: cover;
-  font-size: 13px;
-  font-weight: bold;
+  color: #fff;
 }
 
 .button.button-light {
