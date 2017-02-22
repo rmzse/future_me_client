@@ -64,13 +64,13 @@ angular.module('futureme.controllers', [])
 
     $scope.myGoBackSkip = function () {
       $state.transitionTo('suggestions');
-      $timeout(function(){
+      $timeout(function () {
         var result = document.getElementById('skip_button');
         angular.element(result).triggerHandler('click');
       }, 300);
     };
 
-    $scope.gotoGoogle = function(link) {
+    $scope.gotoGoogle = function (link) {
       window.open(link, '_system');
     }
   })
@@ -93,7 +93,7 @@ angular.module('futureme.controllers', [])
 
     $scope.myGoBackSkip = function () {
       $state.transitionTo('suggestions');
-      $timeout(function(){
+      $timeout(function () {
         var result = document.getElementById('skip_button');
         angular.element(result).triggerHandler('click');
       }, 300);
@@ -107,14 +107,20 @@ angular.module('futureme.controllers', [])
 
     $scope.pairs = [];
 
-    $scope.pairOutput = function(a) {
-        var temp = a;
-        var arr = [];
+    $scope.pairOutput = function (a) {
+      var temp = a;
+      var arr = [];
 
-        while (temp.length < 1) {
-          arr.push(temp.splice(0,2));
+      while (temp.length) {
+        if (temp.length === 1) {
+          arr.push(temp.splice(0, 1));
         }
-        return arr;
+        else {
+          arr.push(temp.splice(0, 2));
+        }
+      }
+      console.log(arr);
+      return arr;
     };
 
     $scope.pairs = $scope.pairOutput($scope.savedCards);
