@@ -15,6 +15,14 @@
     <div class="row top-space">
       <ion-scroll class="col-90">
         {{occupation.description}}
+        <h3 ng-if="occupation.title_2" class="description-subtitle">{{occupation.title_2}}</h3>
+        {{occupation.description_2}}
+        <h3 ng-if="occupation.title_3" class="description-subtitle">{{occupation.title_3}}</h3>
+        {{occupation.description_3}}
+        <h3 ng-if="occupation.title_4" class="description-subtitle">{{occupation.title_4}}</h3>
+        {{occupation.description_4}}
+        <h3 class="description-rating-text">Chans att få jobb</h3>
+        <h3 class="description-rating">{{occupation.rating}}</h3>
       </ion-scroll>
     </div>
     <div class="row top-space">
