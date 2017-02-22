@@ -1,6 +1,6 @@
 angular.module('futureme.controllers', [])
 
-  .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, StorageService, $ionicLoading) {
+  .controller('cardsCtrl', function ($scope, $state, TDCardDelegate, $timeout, StorageService, $ionicLoading) {
 
     var cards = StorageService.getAll();
 
@@ -49,7 +49,7 @@ angular.module('futureme.controllers', [])
   .controller('cardCtrl', function ($scope, TDCardDelegate) {
   })
 
-  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
+  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading, $timeout, $state ) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
 
@@ -63,6 +63,14 @@ angular.module('futureme.controllers', [])
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
+    };
+
+    $scope.myGoBackSkip = function () {
+      $state.transitionTo('suggestions');
+      $timeout(function(){
+        var result = document.getElementById('skip_button');
+        angular.element(result).triggerHandler('click');
+      }, 300);
     };
 
     $scope.gotoGoogle = function(link) {
@@ -70,7 +78,7 @@ angular.module('futureme.controllers', [])
     }
   })
 
-  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
+  .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading, $timeout, $state) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
 
@@ -84,6 +92,14 @@ angular.module('futureme.controllers', [])
 
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
+    };
+
+    $scope.myGoBackSkip = function () {
+      $state.transitionTo('suggestions');
+      $timeout(function(){
+        var result = document.getElementById('skip_button');
+        angular.element(result).triggerHandler('click');
+      }, 300);
     };
   })
 
