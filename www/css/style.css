@@ -213,11 +213,16 @@ td-card img {
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
   color: white;
+  font-size: 28px;
 }
 
 .button-group_path {
-  margin-top: 8rem;
+  margin-top: 2rem;
   text-align: center;
+}
+
+.path-image {
+  max-height: 22.5rem;
 }
 
 /*Libary screen*/
