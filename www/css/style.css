@@ -240,6 +240,11 @@ lib-screen{
   overflow: scroll;
 }
 
+
+.lib-row{
+  margin-top: .5rem;
+}
+
 .lib-button-wrapper{
   width: 1%;
   display: table;
@@ -248,7 +253,6 @@ lib-screen{
 }
 
 .lib-button{
-  margin-top: 2.5rem;
   overflow: hidden;
   width: 7rem;
   height:7rem;
@@ -258,12 +262,9 @@ lib-screen{
   font-weight: bold;
 }
 
-.lib-row{
-
-}
-
 .lib-title {
   margin-top: .6rem;
+  margin-bottom: 2rem;
   color: #595959;
   font-size: 1.2rem;
   font-weight: bold;
