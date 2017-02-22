@@ -246,10 +246,9 @@ lib-screen{
 
 .lib-content {
   background-color: #fff;
-  /*border:solid 1px deeppink;*/
   padding-right: .9rem;
   padding-left: .9rem;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .lib-row{
@@ -258,16 +257,14 @@ lib-screen{
 
 .lib-button-wrapper{
   width: 1%;
-  /*display: table;*/
   display: inline-table;
-  /*border: solid 1px #595959;*/
 }
 
 .lib-button{
   overflow: hidden;
   width: 7rem;
-  height:7rem;
-  border-radius:50%;
+  height: 7rem;
+  border-radius: 50%;
   background-size: cover;
   font-size: .91rem;
   font-weight: bold;
