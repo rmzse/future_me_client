@@ -103,7 +103,6 @@ angular.module('futureme.controllers', [])
   .controller('libraryController', function ($scope, $ionicHistory, StorageService) {
 
     $scope.savedCards = StorageService.getSaved();
-    console.log($scope.savedCards);
 
     $scope.pairs = [];
 
@@ -119,7 +118,6 @@ angular.module('futureme.controllers', [])
           arr.push(temp.splice(0, 2));
         }
       }
-      console.log(arr);
       return arr;
     };
 
