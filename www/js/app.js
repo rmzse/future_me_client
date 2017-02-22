@@ -64,4 +64,6 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
       });
 
     $urlRouterProvider.otherwise('/suggestions');
+    // $urlRouterProvider.otherwise('/library');
+
   });
