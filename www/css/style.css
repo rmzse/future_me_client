@@ -192,7 +192,7 @@ td-card img {
 
 .col-90 {
   color: white;
-  height: 32rem;
+  height: 25rem;
   font-size: 20px;
   padding-top: 1rem;
   padding-left: 2rem;
@@ -205,7 +205,6 @@ td-card img {
 }
 
 .button-group_description {
-  margin-top: -6rem;
   text-align: center;
 }
 
@@ -228,7 +227,7 @@ td-card img {
 .description-rating {
   color: ivory;
   text-align: center;
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
 }
 
 .item.item-trns {
