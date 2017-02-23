@@ -136,32 +136,32 @@ td-card img {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.7vw;
-  margin-right: 0.7vw;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
 }
 
 .button-royal {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.7vw;
-  margin-right: 0.7vw;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
 }
 
 .button-positive {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.7vw;
-  margin-right: 0.7vw;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
 }
 
 .button-assertive {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.7vw;
-  margin-right: 0.7vw;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
 }
 
 /*description screen */
@@ -192,7 +192,7 @@ td-card img {
 
 .col-90 {
   color: white;
-  height: 25rem;
+  height: 60vh;
   font-size: 1.28rem;
   padding-top: 1rem;
   padding-left: 2rem;
