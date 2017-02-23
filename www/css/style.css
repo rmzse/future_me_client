@@ -187,16 +187,17 @@ td-card img {
   font-size: 1.9rem;
   line-height: 100%;
   padding-left: 2rem;
-  padding-top: 6rem;
+  padding-top: 10vh;
 }
 
 .col-90 {
   color: white;
-  height: 60vh;
+  height: 70vh;
   font-size: 1.28rem;
-  padding-top: 1rem;
-  padding-left: 2rem;
+  margin-left: 8vw;
+  padding-right: 4.5vw;
   overflow: hidden;
+  width: 100%;
 }
 
 .row + .row {
@@ -205,7 +206,7 @@ td-card img {
 }
 
 .button-group_description {
-  margin-top: 2.4vh;
+  margin-top: 3.25vh;
   text-align: center;
 }
 
@@ -216,7 +217,8 @@ td-card img {
 }
 
 .description-subtext-bold {
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1.04rem;
 }
 
 .description-rating-text {
@@ -312,4 +314,26 @@ lib-screen {
 
 .button.button-light {
   color: #fff;
+}
+
+/* Global */
+.header-bar-title{
+  width: 100%;
+  text-align: center;
+  line-height: 1.05;
+  font-size: 1rem;
+  margin-top: 1vh;
+  text-shadow: 1px 1px 3px #333;
+  background-blend-mode: overlay;
+}
+
+.body-text{
+  font-size: 1.01rem;
+  text-shadow: 1px 1px 3px #333;
+  background-blend-mode: overlay;
+}
+
+ion-content, ion-pane, ion-nav-bar, ion-header-bar, ion-view, body, span, h1, h2, h3, h4, h5, h6, title {
+  src: url("../font/Cabin-Medium.ttf.svg"); !important;
+  text-shadow: 1px 1px 3px #333;
 }
