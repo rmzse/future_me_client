@@ -142,9 +142,9 @@ td-card img {
 
 .button-royal {
   border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 0.5rem;
+  width: 11vmax;
+  height: 11vmax;
+  margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
 
