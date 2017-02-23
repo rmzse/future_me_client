@@ -46,7 +46,7 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading) {
+  .controller('descriptionCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading, $state, $timeout) {
 
     $scope.occupation = StorageService.getOccupation($stateParams.id)[0];
 
