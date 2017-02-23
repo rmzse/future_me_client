@@ -9,7 +9,7 @@
         <a class="button icon-right ion-ios-bookmarks button-clear" go-click="/library"></a>
       </div>
     </ion-header-bar>
-    <ion-item class="item item-trns text-center">
+    <ion-item class="path-content item item-trns text-center">
       </br>
       </br>
       <h1 class="path-text">Bli en {{occupation.title}}</h1>
@@ -17,7 +17,7 @@
     </ion-item>
     <div class="col button-group_path">
       <button class="button button-assertive icon ion-close" ng-click="myGoBackSkip()"></button>
-      <button class="button button-positive icon ion-information" go-click="/description/{{occupation.id}}"></button>
+      <button class="button button-positive icon ion-description" go-click="/description/{{occupation.id}}"></button>
       <button class="button button-balanced icon ion-heart" ng-click="saveThisOccupation()"></button>
     </div>
   </ion-content>
