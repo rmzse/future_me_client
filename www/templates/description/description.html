@@ -4,16 +4,14 @@
       <div class="buttons">
         <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack()"></a>
       </div>
-      <h1 class="title">{{occupation.title}}</h1>
+      <div  class="header-bar-title"><div>Det här gör en<br>{{occupation.title}}</div></div>
       <div class="buttons">
         <a class="button icon-right ion-ios-bookmarks button-clear" go-click="/library"></a>
       </div>
     </ion-header-bar>
-    <div>
-      <div class="col-80">Det här gör en {{occupation.title}}</div>
-    </div>
+      <div class="col-80"><!-- Divider div --></div>
     <div class="row top-space">
-      <ion-scroll class="col-90">
+      <ion-scroll class="col-90" style="width: 100%">
         <p ng-if="occupation.description" class="description-subtext-bold">{{occupation.description}}</p>
         <h3 ng-if="occupation.title_2" class="description-subtitle">{{occupation.title_2}}</h3>
         <p ng-if="occupation.description_2" class="body-text">{{occupation.description_2}}</p>
@@ -28,7 +26,7 @@
       <div class="col button-group_description">
         <button class="button button-assertive icon ion-close" ng-click="myGoBackSkip()"></button>
         <button class="button button-royal icon ion-footprint" go-click="/path/{{occupation.id}}"></button>
-        <button class="button button-dark icon ion-link" ng-click="gotoGoogle(occupation.google)"></button>
+        <button class="button button-positive button-link" ng-click="gotoGoogle(occupation.google)"></button>
         <button class="button button-balanced icon ion-heart" ng-click="saveThisOccupation()"></button>
       </div>
   </ion-content>

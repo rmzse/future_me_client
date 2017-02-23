@@ -164,10 +164,6 @@ td-card img {
   margin-right: 0.6vw;
 }
 
-.button-balanced::before {
-  font-size: 2rem;
-}
-
 /*description screen */
 
 .ion-footprint {
@@ -191,6 +187,13 @@ td-card img {
   background-repeat: no-repeat;
 }
 
+.button-link{
+  background-image: url('../img/linkw.png');
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
+
 .pane {
   overflow: hidden;
   background-size: cover;
@@ -205,14 +208,13 @@ td-card img {
   font-size: 1.9rem;
   line-height: 100%;
   padding-left: 2rem;
-  padding-top: 6rem;
+  padding-top: 10vh;
 }
 
 .col-90 {
   color: white;
   height: 60vh;
   font-size: 1.28rem;
-  padding-top: 1rem;
   padding-left: 2rem;
   overflow: hidden;
 }
@@ -340,11 +342,23 @@ lib-screen{
 
 
 /* Global */
-ion-content, ion-pane, ion-nav-bar, ion-header-bar, ion-view, body, span, h1, h2, h3, h4, h5, h6 {
-  src: url("../font/Cabin-Medium.ttf.svg"); !important;
+.header-bar-title{
+  width: 100%;
+  text-align: center;
+  line-height: 1.05;
+  font-size: 1rem;
+  margin-top: 1vh;
   text-shadow: 1px 1px 3px #333;
+  background-blend-mode: overlay;
 }
 
 .body-text{
   font-size: 1.03rem;
+  text-shadow: 1px 1px 3px #333;
+  background-blend-mode: overlay;
+}
+
+ion-content, ion-pane, ion-nav-bar, ion-header-bar, ion-view, body, span, h1, h2, h3, h4, h5, h6, title {
+  src: url("../font/Cabin-Medium.ttf.svg"); !important;
+  text-shadow: 1px 1px 3px #333;
 }
