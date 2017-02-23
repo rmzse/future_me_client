@@ -23,8 +23,8 @@
         <p ng-if="occupation.arbetstider" class="description-subtext">{{occupation.arbetstider}}</p>
         <h3 ng-if="occupation.inriktningar" class="description-subtitle">Exempel på Inriktningar</h3>
         <section>
-          <ul class="description-bullets" ng-if="occupation.inriktningar" ng-repeat="inriktning in occupation.inritningar">
-            <li>{{inriktning}}</li>
+          <ul ng-if="occupation.inriktningar" ng-repeat="inriktning in occupation.inriktningar">
+            <li>• {{inriktning}}</li>
           </ul>
         </section>
         <h3 ng-if="occupation.loen" class="description-subtitle">Lön</h3>

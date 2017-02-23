@@ -12,7 +12,7 @@ angular.module("futureme.services", [])
           arbetsuppgifter: 'Industribageri · Bagare på ett automatiserat industribageri övervakar bakningen som sker med hjälp av maskiner. De som arbetar på ett industribageri kan även kallas bageriarbetare. De knappar in receptet på den produkt som ska bakas i bakdatorn. Brödtillverkningen sker sedan helt automatiskt på “löpande band”. Ingredienserna blandas efter ett inprogrammerat recept. Degen delas upp och formas. Jäsningen sker medan degen transporteras på en jäsbana. Gräddningen sker i en tunnelugn genom vilken bröden förs på en linje. Sedan går brödet via en bana till paketeringen. Vissa industribagerier har dock ett större antal manuella moment. Att sätta degen kan exempelvis göras för hand, liksom att sköta utbakning och gräddning. Tillverkningen av kaffebröd är inte heller lika automatiserad som tillverkningen av matbröd. Mindre bageri · Även de mindre lokala bagerierna och butikerna är välutrustade med maskiner och kan ibland ha bakdator. Det vanliga är dock att de flesta arbetsmomenten utförs för hand vilket ger ett mer omväxlande arbete. Bagarna gör då allt från att väga upp ingredienserna till att forma, jäsa och grädda brödet eller kakorna. De tar också hand om disken och ser till att hålla arbetsplatsen ren och snygg.',
           arbetsplatser: 'I dag produceras en del matbröd av ett antal stora industribagerier. Men en ökande del bröd bakas även i lokala, närproducerande bagerier. Många butiker bakar även sitt eget bröd och säljer direkt till kunderna utan mellanhänder',
           arbetstider: 'Bagare på industribagerier arbetar ofta natt och helgarbete varannan helg eller liknande förekommer. Även skiftgång kan förekomma. Som bagare på ett litet bageri eller konditori börjar man oftast arbeta mycket tidigt på morgonen.',
-          inriktningar: ['Barnsjuksköterska','Akutsjuksköterska', 'Ambulanssjuksköterska', 'Anestesi- och intensivvårdssjuksköterska', 'Barnmorska', 'Distrikssköterska', 'Företagssköterska', 'Skolsköterska', 'Hygiensjuksköterska', 'Ögonsjuksköterska', 'Psykiatrisjuksköterska', 'Operationssjuksköterska', 'Röntgensjuksköterska', 'Motagningssjuksköterska', 'Geriatriksjuksköterska'],
+          inriktningar: null,
           loen: null,
           rating: '★★★★☆',
           google: 'https://www.google.se/#q=vad+g%C3%B6r+bagare%3F&*?',
@@ -26,7 +26,7 @@ angular.module("futureme.services", [])
           arbetsuppgifter: 'Som sjuksköterska arbetar du med omvårdnad inom en mängd olika specialområden. Allt från skolhälsovård, operation och kirurgi till äldrevård och psykiatri. Kärnan i yrket är omvårdnad, vilket innebär kunskap om hur människan bäst kan bevara sin hälsa och hur man undviker ohälsa. Sjuksköterskan är den på ett sjukhus, eller annan plats, som ansvarar för att medicinska ordinationer blir ordentligt genomförda och att patienterna får den vård de behöver. Sjuksköterskan administrerar läkemedel, utför behandlingar och informerar både patienter och anhöriga. I ditt arbete som sjuksköterska kommer du även att få handleda nyanställda och studerande och det kommer tillfällen då du får verka som arbetsledare.',
           arbetsplatser: 'Sjuksköterskor kan arbeta inom landsting, kommun eller privat verksamhet. Exempel på arbetsplatser är sjukhus, kommunal äldrevård, vård och omsorg för funktionshindrade, vårdcentraler samt öppenvård.',
           arbetstider: null,
-          inriktningar: null,
+          inriktningar: ['Barnsjuksköterska', 'Akutsjuksköterska', 'Ambulanssjuksköterska', 'Anestesi- och intensivvårdssjuksköterska', 'Barnmorska', 'Distrikssköterska', 'Företagssköterska', 'Skolsköterska', 'Hygiensjuksköterska', 'Ögonsjuksköterska', 'Psykiatrisjuksköterska', 'Operationssjuksköterska', 'Röntgensjuksköterska', 'Motagningssjuksköterska', 'Geriatriksjuksköterska'],
           loen: null,
           rating: '★★★★☆',
           google: 'https://www.google.se/#q=vad+g%C3%B6r+sjuksk%C3%B6terska%3F&*?',
@@ -74,26 +74,25 @@ angular.module("futureme.services", [])
       $localStorage.saved_occupations.push(occupation);
     };
 
-  var _getSaved = function () {
-    return $localStorage.saved_occupations;
-  };
+    var _getSaved = function () {
+      return $localStorage.saved_occupations;
+    };
 
-  var _deleteSaved = function (occupation) {
-    for(var i=0; i < $localStorage.saved_occupations.length; i++) {
-      if($localStorage.saved_occupations[i].id == occupation.id)
-      {
-        $localStorage.saved_occupations.splice(i,1);
+    var _deleteSaved = function (occupation) {
+      for (var i = 0; i < $localStorage.saved_occupations.length; i++) {
+        if ($localStorage.saved_occupations[i].id == occupation.id) {
+          $localStorage.saved_occupations.splice(i, 1);
+        }
       }
-    }
-  };
+    };
 
-  return {
-    getAll: _getAll,
-    add: _add,
-    remove: _remove,
-    getOccupation: _getOccupation,
-    saveOccupation: _saveOccupation,
-    getSaved: _getSaved,
-    deleteSaved: _deleteSaved
-  };
-});
+    return {
+      getAll: _getAll,
+      add: _add,
+      remove: _remove,
+      getOccupation: _getOccupation,
+      saveOccupation: _saveOccupation,
+      getSaved: _getSaved,
+      deleteSaved: _deleteSaved
+    };
+  });

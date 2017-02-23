@@ -166,10 +166,6 @@ td-card img {
 
 /*description screen */
 
-.description-bullets {
-  list-style-type: disc;
-}
-
 .ion-footprint {
   background-image: url('../img/footsteps_icon_white_360.png');
   background-position: center;
