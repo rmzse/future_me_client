@@ -100,6 +100,7 @@ td-card img {
 }
 
 .ion-ios-bookmarks {
+  background-image: url('../img/library.png');
   margin-right: 2.9vw;
   border: none;
   background: #595959;
@@ -165,7 +166,12 @@ td-card img {
   margin-right: 0.6vw;
 }
 
-/*description screen */
+.go-to-library {
+  background-image: url('../img/library.png');
+  background-position: center;
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+}
 
 .ion-footprint {
   background-image: url('../img/footsteps_icon_white_360.png');
@@ -194,6 +200,8 @@ td-card img {
   background-size: 2rem;
   background-repeat: no-repeat;
 }
+
+/*description screen */
 
 .pane {
   overflow: hidden;
@@ -327,6 +335,7 @@ lib-screen {
   color: #595959;
   font-size: 1.2rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .center {
@@ -345,7 +354,7 @@ lib-screen {
 }
 
 /* Global */
-.header-bar-title{
+.header-bar-title {
   width: 100%;
   text-align: center;
   line-height: 1.05;
@@ -353,6 +362,10 @@ lib-screen {
   margin-top: 1vh;
   text-shadow: 1px 1px 3px #333;
   background-blend-mode: overlay;
+}
+
+h1.header-bar-title {
+  margin-top: 1.5vh;
 }
 
 .body-text{
