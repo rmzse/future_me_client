@@ -7,10 +7,10 @@ td-cards {
 td-card {
   position: absolute;
   left: 50%;
-  margin-top: 1rem;
-  margin-left: -11rem;
-  width: 22rem;
-  height: 40rem;
+  margin-top: 2vh;
+  margin-left: -47vw;
+  width: 94vw;
+  height: 96vh;
   background-color: white;
 
   border: 1px solid #999;
@@ -27,12 +27,12 @@ td-card img {
 
 .refresh-card {
   background-color: white;
-  height: 40rem;
+  height: 96vh;
 }
 
 .card-image {
   overflow: hidden;
-  height: 33rem;
+  height: 79vh;
   background-size: cover;
 }
 
@@ -91,16 +91,16 @@ td-card img {
 }
 
 .suggestion-title-row {
-  margin-top: 6rem
+  margin-top: 14.4vh
 }
 
 .button-group {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2.4vh;
 }
 
 .ion-ios-bookmarks {
-  margin-right: 10px;
+  margin-right: 2.9vw;
   border: none;
   background: #595959;
   border-radius: 50%;
@@ -111,7 +111,7 @@ td-card img {
 
 .bar button {
   margin-top: 1rem;
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 
 /*buttons*/
@@ -120,8 +120,8 @@ td-card img {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
 }
 
 .button-back {
@@ -136,32 +136,32 @@ td-card img {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
 }
 
 .button-royal {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.25rem;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
 }
 
 .button-positive {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
 }
 
 .button-assertive {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
 }
 
 /*description screen */
@@ -184,7 +184,7 @@ td-card img {
 
 .col-80 {
   color: white;
-  font-size: 30px;
+  font-size: 1.9rem;
   line-height: 100%;
   padding-left: 2rem;
   padding-top: 6rem;
@@ -193,7 +193,7 @@ td-card img {
 .col-90 {
   color: white;
   height: 25rem;
-  font-size: 20px;
+  font-size: 1.28rem;
   padding-top: 1rem;
   padding-left: 2rem;
   overflow: hidden;
@@ -205,14 +205,14 @@ td-card img {
 }
 
 .button-group_description {
-  margin-top: 1rem;
+  margin-top: 2.4vh;
   text-align: center;
 }
 
 .description-subtitle {
   color: ivory;
-  padding-top: 3rem;
-  padding-bottom: 0.5rem;
+  padding-top: 7.2vh;
+  padding-bottom: 1.2vh;
 }
 
 .description-subtext-bold {
@@ -220,7 +220,7 @@ td-card img {
 }
 
 .description-rating-text {
-  padding-top: 1rem;
+  padding-top: 2.4vh;
   color: ivory;
   text-align: center;
 }
@@ -228,7 +228,7 @@ td-card img {
 .description-rating {
   color: ivory;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2.4vh;
 }
 
 .item.item-trns {
@@ -241,16 +241,16 @@ td-card img {
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .button-group_path {
-  margin-top: 2rem;
+  margin-top: 4.8vh;
   text-align: center;
 }
 
 .path-image {
-  max-height: 22.5rem;
+  max-height: 54vh;
 }
 
 /*Libary screen*/
@@ -267,13 +267,13 @@ lib-screen{
 
 .lib-content {
   background-color: #fff;
-  padding-right: .9rem;
-  padding-left: .9rem;
+  padding-right: 2.16vw;
+  padding-left: 2.16vw;
   overflow: auto;
 }
 
 .lib-row{
-  margin-top: .5rem;
+  margin-top: 1.2vh;
 }
 
 .lib-button-wrapper{
@@ -292,8 +292,8 @@ lib-screen{
 }
 
 .lib-title {
-  margin-top: .6rem;
-  margin-bottom: 2rem;
+  margin-top: 1.44vh;
+  margin-bottom: 4.8vh;
   color: #595959;
   font-size: 1.2rem;
   font-weight: bold;
