@@ -213,10 +213,11 @@ td-card img {
 
 .col-90 {
   color: white;
-  height: 60vh;
+  height: 70vh;
   font-size: 1.28rem;
   padding-left: 2rem;
   overflow: hidden;
+  width: 100%;
 }
 
 .row + .row {
@@ -225,7 +226,7 @@ td-card img {
 }
 
 .button-group_description {
-  margin-top: 2.4vh;
+  margin-top: 3.25vh;
   text-align: center;
 }
 
