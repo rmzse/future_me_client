@@ -194,8 +194,8 @@ td-card img {
   color: white;
   height: 70vh;
   font-size: 1.28rem;
-  margin-left: 8vw;
-  padding-right: 4.5vw;
+  margin-left: 7.5vw;
+  padding-right: 5vw;
   overflow: hidden;
   width: 100%;
 }
@@ -212,13 +212,14 @@ td-card img {
 
 .description-subtitle {
   color: ivory;
-  padding-top: 7.2vh;
-  padding-bottom: 1.2vh;
+  margin-top: 3.2vh;
+  margin-bottom: .85vh;
 }
 
-.description-subtext-bold {
+.description-ingress {
   font-weight: 500;
   font-size: 1.04rem;
+  margin-bottom: 6vh;
 }
 
 .description-rating-text {
