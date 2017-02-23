@@ -1,49 +1,27 @@
-<ion-view title="Description">
-  <ion-content scroll="false" class="screen" style="background-image: url('img/background.png')">
-    <ion-header-bar class='bar-clear'>
-      <div class="buttons">
-        <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack()"></a>
-      </div>
-      <h1 class="title">Library</h1>
-    </ion-header-bar>
-    <div class="row top-space">
-      <div class="row row-lib">
-        <button class="button button-light" style="background-image: url('img/Sjuksköterska.png')">
-          Sjuksköterska
-        </button>
-        <button class="button button-light" style="background-image: url('img/Bagare.png')">
-          Bagare
-        </button>
-      </div>
+<ion-view title="Description" class="screen lib-screen" scroll="false">
+  <ion-header-bar class='bar-clear'>
+    <div class="buttons">
+      <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack()"></a>
     </div>
-    <div class="row top-space">
-      <div class="row row-lib">
-        <button class="button button-light" style="background-image: url('img/Bagare.png')">
-          Bagare
-        </button>
-        <button class="button button-light" style="background-image: url('img/Mobeldes.png')">
-          Möbeldesigner
-        </button>
+    <h1 class="title">Library</h1>
+  </ion-header-bar>
+  <ion-content class="lib-content center">
+    <div ng-repeat="pair in pairs" class="lib-row">
+      <div class="lib-button-wrapper" style="margin-right: .7rem;">
+        <button class="button button-light lib-button"
+                style="border:solid 5px #595959; background-image: url('img/{{pair[0].image}}')" go-click="/description/{{pair[0].id}}"
+                on-hold="showActionsheet({{pair[0]}})"></button>
+        <div class="lib-title center">
+          {{pair[0].title}}
+        </div>
       </div>
-    </div>
-    <div class="row top-space">
-      <div class="row row-lib">
-        <button class="button button-light" style="background-image: url('img/Mobeldes.png')">
-          Möbeldesigner
-        </button>
-        <button class="button button-light" style="background-image: url('img/Sjuksköterska.png')">
-          Sjuksköterska
-        </button>
-      </div>
-    </div>
-    <div class="row top-space">
-      <div class="row row-lib">
-        <button class="button button-light" style="background-image: url('img/Bagare.png')">
-          Bagare
-        </button>
-        <button class="button button-light" style="background-image: url('img/Mobeldes.png')">
-          Möbeldesigner
-        </button>
+      <div ng-if="pair[1]" class="lib-button-wrapper">
+        <button class="button button-light lib-button"
+                style="border:solid 5px #595959; background-image: url('img/{{pair[1].image}}')" go-click="/description/{{pair[1].id}}"
+                on-hold="showActionsheet({{pair[1]}})"></button>
+        <div class="lib-title center">
+          {{pair[1].title}}
+        </div>
       </div>
     </div>
   </ion-content>
