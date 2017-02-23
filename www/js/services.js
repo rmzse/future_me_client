@@ -77,12 +77,17 @@ angular.module("futureme.services", [])
     return $localStorage.saved_occupations;
   };
 
+  var _deleteSaved = function (occupation) {
+    $localStorage.saved_occupations.splice($localStorage.saved_occupations.indexOf(occupation), 1);
+  };
+
   return {
     getAll: _getAll,
     add: _add,
     remove: _remove,
     getOccupation: _getOccupation,
     saveOccupation: _saveOccupation,
-    getSaved: _getSaved
+    getSaved: _getSaved,
+    deleteSaved: _deleteSaved
   };
 });

@@ -10,7 +10,7 @@
       <div class="lib-button-wrapper" style="margin-right: .7rem;">
         <button class="button button-light lib-button"
                 style="border:solid 5px #595959; background-image: url('img/{{pair[0].image}}')" go-click="/description/{{pair[0].id}}"
-                on-hold="showActionsheet()"></button>
+                on-hold="showActionsheet({{pair[0]}})"></button>
         <div class="lib-title center">
           {{pair[0].title}}
         </div>
@@ -18,12 +18,11 @@
       <div ng-if="pair[1]" class="lib-button-wrapper">
         <button class="button button-light lib-button"
                 style="border:solid 5px #595959; background-image: url('img/{{pair[1].image}}')" go-click="/description/{{pair[1].id}}"
-                on-hold="showActionsheet()"></button>
+                on-hold="showActionsheet({{pair[1]}})"></button>
         <div class="lib-title center">
           {{pair[1].title}}
         </div>
       </div>
     </div>
-    <button on-hold="onHold()" class="button">Test</button>
   </ion-content>
 </ion-view>

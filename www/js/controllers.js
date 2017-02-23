@@ -126,21 +126,20 @@ angular.module('futureme.controllers', [])
       $ionicHistory.goBack();
     };
 
-    $scope.showActionsheet = function() {
-
+    $scope.showActionsheet = function(occupation) {
     $ionicActionSheet.show({
       destructiveText: 'Delete',
       cancelText: 'Cancel',
-      cancel: function() {
-        console.log('CANCELLED');
-      },
+      cancel: function() {},
       buttonClicked: function(index) {
-        console.log('BUTTON CLICKED', index);
         return true;
       },
-      destructiveButtonClicked: function() {
-        console.log('DESTRUCT');
-        return true;
+      destructiveButtonClicked: function(occupation) {
+        StorageService.deleteSaved(occupation);
+        $scope.savedCards = Array.prototype.slice.call(StorageService.getSaved(), 0);
+        $scope.pairs = [];
+        $scope.pairs = $scope.pairOutput($scope.savedCards);
+          return true;
       }
     });
   };
