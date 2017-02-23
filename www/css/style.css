@@ -173,6 +173,27 @@ td-card img {
   background-repeat: no-repeat;
 }
 
+.ion-description{
+  background-image: url('../img/descrlinesw.png');
+  background-position: center;
+  background-size: 2.6rem;
+  background-repeat: no-repeat;
+}
+
+.ion-heart{
+  background-image: url('../img/heart.png');
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
+
+.button-link{
+  background-image: url('../img/linkw.png');
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
+
 .pane {
   overflow: hidden;
   background-size: cover;
@@ -219,7 +240,7 @@ td-card img {
 .description-ingress {
   font-weight: 500;
   font-size: 1.04rem;
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 
 .description-rating-text {
