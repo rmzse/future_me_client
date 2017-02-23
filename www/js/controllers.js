@@ -72,7 +72,7 @@ angular.module('futureme.controllers', [])
 
     $scope.gotoGoogle = function (link) {
       window.open(link, '_system');
-    }
+    };
   })
 
   .controller('pathCtrl', function ($scope, $ionicHistory, $stateParams, StorageService, $ionicLoading, $timeout, $state) {
@@ -100,7 +100,7 @@ angular.module('futureme.controllers', [])
     };
   })
 
-  .controller('libraryController', function ($scope, $ionicHistory, StorageService) {
+  .controller('libraryController', function ($scope, $ionicHistory, StorageService, $ionicActionSheet) {
 
     $scope.savedCards = Array.prototype.slice.call(StorageService.getSaved(), 0);
     $scope.pairs = [];
@@ -125,4 +125,23 @@ angular.module('futureme.controllers', [])
     $scope.myGoBack = function () {
       $ionicHistory.goBack();
     };
+
+    $scope.showActionsheet = function() {
+
+    $ionicActionSheet.show({
+      destructiveText: 'Delete',
+      cancelText: 'Cancel',
+      cancel: function() {
+        console.log('CANCELLED');
+      },
+      buttonClicked: function(index) {
+        console.log('BUTTON CLICKED', index);
+        return true;
+      },
+      destructiveButtonClicked: function() {
+        console.log('DESTRUCT');
+        return true;
+      }
+    });
+  };
   });
