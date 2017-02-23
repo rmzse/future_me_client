@@ -87,11 +87,11 @@ td-card img {
 .suggestion-title {
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .suggestion-title-row {
-  margin-top: 30rem
+  margin-top: 6rem
 }
 
 .button-group {
@@ -99,13 +99,29 @@ td-card img {
   margin-top: 1rem;
 }
 
+.ion-ios-bookmarks {
+  margin-right: 10px;
+  border: none;
+  background: #595959;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+}
+
+.bar button {
+  margin-top: 1rem;
+  font-size: 25px;
+}
+
 /*buttons*/
 
 .button-dark {
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .button-back {
@@ -148,7 +164,32 @@ td-card img {
   margin-right: 0.25rem;
 }
 
-/*Suggestion screen */
+.button-balanced::before {
+  font-size: 2rem;
+}
+
+/*description screen */
+
+.ion-footprint {
+  background-image: url('../img/footsteps_icon_white_360.png');
+  background-position: center;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+}
+
+.ion-description{
+  background-image: url('../img/descrlinesw.png');
+  background-position: center;
+  background-size: 2.6rem;
+  background-repeat: no-repeat;
+}
+
+.ion-heart{
+  background-image: url('../img/heart.png');
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
 
 .pane {
   overflow: hidden;
@@ -162,17 +203,17 @@ td-card img {
 .col-80 {
   color: white;
   font-size: 30px;
-  padding-left: 30px;
-  padding-top: 100px;
+  line-height: 100%;
+  padding-left: 2rem;
+  padding-top: 6rem;
 }
 
 .col-90 {
   color: white;
-  height: auto;
-  max-height: 18.3rem;
+  height: 25rem;
   font-size: 20px;
-  padding-top: 30px;
-  padding-left: 30px;
+  padding-top: 1rem;
+  padding-left: 2rem;
   overflow: hidden;
 }
 
@@ -182,8 +223,30 @@ td-card img {
 }
 
 .button-group_description {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
+}
+
+.description-subtitle {
+  color: ivory;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.description-subtext-bold {
+  font-weight: bold;
+}
+
+.description-rating-text {
+  padding-top: 1rem;
+  color: ivory;
+  text-align: center;
+}
+
+.description-rating {
+  color: ivory;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .item.item-trns {
@@ -196,11 +259,21 @@ td-card img {
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
   color: white;
+  font-size: 28px;
 }
 
 .button-group_path {
-  margin-top: 8rem;
+  margin-top: 2rem;
   text-align: center;
+}
+
+.path-image {
+  max-height: 22.5rem;
+}
+
+.light-header-btn{
+  color: #fff;
+  opacity: 75%;
 }
 
 /*Libary screen*/
@@ -208,24 +281,58 @@ td-card img {
 .screen {
   overflow: hidden;
   background-size: cover;
+  scroll:false;
 }
 
-.row-lib {
-  padding-top: 70px;
-  padding-left: 45px;
+lib-screen{
+  background: #fff;
+}
+
+.lib-content {
+  background-color: #fff;
+  padding-right: .9rem;
+  padding-left: .9rem;
+  overflow: auto;
+}
+
+.lib-row{
+  margin-top: .5rem;
+}
+
+.lib-button-wrapper{
+  width: 1%;
+  display: inline-table;
+}
+
+.lib-button{
+  overflow: hidden;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-size: cover;
+  font-size: .91rem;
+  font-weight: bold;
+}
+
+.lib-title {
+  margin-top: .6rem;
+  margin-bottom: 2rem;
+  color: #595959;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.center {
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*display: block;*/
+  text-align: center;
 }
 
 .button-light {
-  height: 80px;
-  width: 150px;
-  margin-right: 40px;
-  background-size: cover;
-  font-size: 13px;
-  font-weight: bold;
+  color: #fff;
 }
 
 .button.button-light {
   color: #fff;
 }
-
-
