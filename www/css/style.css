@@ -237,7 +237,7 @@ td-card img {
 .screen {
   overflow: hidden;
   background-size: cover;
-  scroll:auto;
+  scroll:false;
 }
 
 lib-screen{
