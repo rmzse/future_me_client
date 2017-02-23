@@ -238,7 +238,7 @@ td-card img {
 
 .description-subtext-bold {
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
 
 .description-rating-text {
@@ -285,10 +285,10 @@ td-card img {
 .screen {
   overflow: hidden;
   background-size: cover;
-  scroll:false;
+  scroll: false;
 }
 
-lib-screen{
+lib-screen {
   background: #fff;
 }
 
@@ -299,16 +299,16 @@ lib-screen{
   overflow: auto;
 }
 
-.lib-row{
+.lib-row {
   margin-top: 1.2vh;
 }
 
-.lib-button-wrapper{
+.lib-button-wrapper {
   width: 1%;
   display: inline-table;
 }
 
-.lib-button{
+.lib-button {
   overflow: hidden;
   width: 7rem;
   height: 7rem;

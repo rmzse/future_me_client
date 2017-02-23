@@ -3,18 +3,20 @@
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.		  These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-Install
+Install ionic framework
 ```
 npm install -g cordova ionic
 ```
 
 ### Installing
 
-Fork and clone repository.
+Fork and clone down the repository to your computer.
+
+run in your terminal:
 
 ```
 $ npm install && bower install.
@@ -32,47 +34,53 @@ Download _Ionic View_ from [Google Play](https://play.google.com/store/apps/deta
 
 Sign in with credentials.
 
-Go to computers terminal,
+Go to your computers terminal and run:
 ```
 $ ionic upload
 ```
 
-Follow instructions in the terminal
-
-Insert app id (xxxxxxxx)
-```
-Successfully uploaded (xxxxxxxx)
-```
-
-When completed the latest changes will be successfully uploaded in the ionic view application.
+Follow instructions in the terminal and your app will be uploaded to your ionic view application on your mobile device.
 
 ## How to add/delete/edit occupations
 
-Open project in selected text editor and open the file `services.js`.
+To add a new occupation you will need to navigate to ```www/js/services.js``` and add a new occupation to the  occupations: array in the default storage. Don't forget `,` after the previous hash `{}`. Fill in all necessary information needed.
 
-### Adding Occupations
-
-To add a new occupation you will need to add a new hash `{ }` below the last one. Don't forget `,` after the previous hash `{}`. Fill in all necessary information needed.
-
+This is the template: 
 ```
 {
-id: [replace me with a number that is not already in use],
-title: '[replace me with title of occupation]',
-image: '[replace me with image name from img folder]',
-description: '[replace me with description of occupation]',
-title_2: '[replace me with title 2]',
-description_2: '[replace me with description for title_2]',
-title_3: '[replace me with title 3]',
-description_3: '[replace me with description for title_3]',
-title_4: '[replace me with title 4]',
-description_4: '[replace me with description for title_4]',
-rating: '[replace me with stars]',
-google: '[replace me with google url]',
-path_steps: '[replace me with occupation path picture]'
-}
+  id: null,             
+  title: null,
+  image: null,
+  ingress: null,
+  arbetsuppgifter: null,
+  arbetsplatser: null,
+  arbetstider: null, 
+  inriktningar: null,
+  loen: null,        
+  rating: '★★★☆☆',   
+  google: null,
+  path_steps: null
+ },
 ```
 
-To add a new image, add the file to www/img folder in project.
+This is an example how it can look like (Note that 'inriktningar' is an array and is being displayed as bulletpoints)
+```
+    {
+      id: 2,
+      title: 'sjuksköterska',
+      image: 'Sjuksköterska.png',
+      ingress: 'Sjuksköterskornas arbetsuppgifter och arbetsplatser varierar...',
+      arbetsuppgifter: 'Som sjuksköterska arbetar du med omvårdnad.....',
+      arbetsplatser: 'Sjuksköterskor kan arbeta inom landsting...',
+      arbetstider: null,
+      inriktningar: ['Barnsjuksköterska', 'Akutsjuksköterska', 'Ambulanssjuksköterska'],
+      loen: null,
+      rating: '★★★★☆',
+      google: 'https://www.google.se/#q=vad+g%C3%B6r+sjuksk%C3%B6terska%3F&*?',
+      path_steps: 'Nurse(transparent).png'
+    },
+```
+To add a new image, add the file to www/img folder in project and include just the name (as seen above) in the occupation object in the services.js file.
 
 ### Deleting Occupations
 Delete the whole occupation hash `{ }`, or information inside hash `{ }` that is not necessary.
@@ -84,8 +92,8 @@ Edit in occupation hash `{ }` by replacing information with other information.
 ## Built With
 * [AngularJS](https://angularjs.org) - Framework for JavaScript
 * [Ionic Framework](http://ionicframework.com) - Built with the mobile application framework Ionic
-* [ionic-ion-tinder-cards-2](https://github.com/loringdodge/ionic-ion-tinder-cards-2) - Used for implementing the tinder cards functionality		    
-* [ng-Storage](https://github.com/gsklee/ngStorage) - Used for saving data in local storage, including occupations as default.		    
+* [ionic-ion-tinder-cards-2](https://github.com/loringdodge/ionic-ion-tinder-cards-2) - Used for implementing the tinder cards functionality      
+* [ng-Storage](https://github.com/gsklee/ngStorage) - Used for saving data in local storage, including occupations as default.      
 
-## License		  
+## License    
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
