@@ -248,7 +248,7 @@ td-card img {
 
 .description-ingress {
   font-weight: 500;
-  font-size: 1.04rem;
+  font-size: 1.08rem;
   margin-bottom: 5vh;
 }
 
@@ -372,6 +372,7 @@ h1.header-bar-title {
   font-size: 1.01rem;
   text-shadow: 1px 1px 3px #333;
   background-blend-mode: overlay;
+  font-weight: 500;
 }
 
 ion-content, ion-pane, ion-nav-bar, ion-header-bar, ion-view, body, span, h1, h2, h3, h4, h5, h6, title {
