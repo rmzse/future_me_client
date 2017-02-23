@@ -166,6 +166,10 @@ td-card img {
 
 /*description screen */
 
+.description-bullets {
+  list-style-type: disc;
+}
+
 .ion-footprint {
   background-image: url('../img/footsteps_icon_white_360.png');
   background-position: center;
@@ -258,10 +262,10 @@ td-card img {
 .screen {
   overflow: hidden;
   background-size: cover;
-  scroll:false;
+  scroll: false;
 }
 
-lib-screen{
+lib-screen {
   background: #fff;
 }
 
@@ -272,16 +276,16 @@ lib-screen{
   overflow: auto;
 }
 
-.lib-row{
+.lib-row {
   margin-top: 1.2vh;
 }
 
-.lib-button-wrapper{
+.lib-button-wrapper {
   width: 1%;
   display: inline-table;
 }
 
-.lib-button{
+.lib-button {
   overflow: hidden;
   width: 7rem;
   height: 7rem;
