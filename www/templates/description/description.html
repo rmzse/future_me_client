@@ -14,16 +14,22 @@
     </div>
     <div class="row top-space">
       <ion-scroll class="col-90">
-        {{occupation.description}}
+        <p ng-if="occupation.description" class="description-subtext-bold">{{occupation.description}}</p>
+        <h3 ng-if="occupation.title_2" class="description-subtitle">{{occupation.title_2}}</h3>
+        <p ng-if="occupation.description_2" class="description-subtext">{{occupation.description_2}}</p>
+        <h3 ng-if="occupation.title_3" class="description-subtitle">{{occupation.title_3}}</h3>
+        <p ng-if="occupation.description_3" class="description-subtext">{{occupation.description_3}}</p>
+        <h3 ng-if="occupation.title_4" class="description-subtitle">{{occupation.title_4}}</h3>
+        <p ng-if="occupation.description_4" class="description-subtext">{{occupation.description_4}}</p>
+        <h3 class="description-rating-text">Chans att få jobb</h3>
+        <h3 class="description-rating">{{occupation.rating}}</h3>
       </ion-scroll>
     </div>
-    <div class="row top-space">
       <div class="col button-group_description">
         <button class="button button-assertive icon ion-close" ng-click="myGoBackSkip()"></button>
         <button class="button button-royal icon ion-footprint" go-click="/path/{{occupation.id}}"></button>
         <button class="button button-dark icon ion-link" ng-click="gotoGoogle(occupation.google)"></button>
         <button class="button button-balanced icon ion-heart" ng-click="saveThisOccupation()"></button>
       </div>
-    </div>
   </ion-content>
 </ion-view>

@@ -164,7 +164,7 @@ td-card img {
   margin-right: 0.25rem;
 }
 
-/*Suggestion screen */
+/*description screen */
 
 .ion-footprint {
   background-image: url('../img/footsteps_icon_white_360.png');
@@ -186,17 +186,16 @@ td-card img {
   color: white;
   font-size: 30px;
   line-height: 100%;
-  padding-left: 30px;
-  padding-top: 100px;
+  padding-left: 2rem;
+  padding-top: 6rem;
 }
 
 .col-90 {
   color: white;
-  height: auto;
   height: 25rem;
   font-size: 20px;
-  padding-top: 50px;
-  padding-left: 30px;
+  padding-top: 1rem;
+  padding-left: 2rem;
   overflow: hidden;
 }
 
@@ -206,8 +205,30 @@ td-card img {
 }
 
 .button-group_description {
-  /*margin-top: 12rem;*/
+  margin-top: 1rem;
   text-align: center;
+}
+
+.description-subtitle {
+  color: ivory;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.description-subtext-bold {
+  font-weight: bold;
+}
+
+.description-rating-text {
+  padding-top: 1rem;
+  color: ivory;
+  text-align: center;
+}
+
+.description-rating {
+  color: ivory;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .item.item-trns {

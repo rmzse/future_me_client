@@ -36,6 +36,11 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
     });
   })
 
+  .config(function($ionicConfigProvider)   {
+    if (ionic.Platform.isIOS())
+      $ionicConfigProvider.scrolling.jsScrolling(false);
+  })
+
   .config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
@@ -63,7 +68,5 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
         controller: 'pathCtrl'
       });
 
-    // $urlRouterProvider.otherwise('/suggestions');
-    $urlRouterProvider.otherwise('/library');
-
+    $urlRouterProvider.otherwise('/suggestions');
   });
