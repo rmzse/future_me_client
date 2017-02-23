@@ -127,6 +127,7 @@ angular.module('futureme.controllers', [])
     };
 
     $scope.showActionsheet = function(occupation) {
+      var job = occupation;
     $ionicActionSheet.show({
       destructiveText: 'Delete',
       cancelText: 'Cancel',
@@ -134,8 +135,8 @@ angular.module('futureme.controllers', [])
       buttonClicked: function(index) {
         return true;
       },
-      destructiveButtonClicked: function(occupation) {
-        StorageService.deleteSaved(occupation);
+      destructiveButtonClicked: function() {
+        StorageService.deleteSaved(job);
         $scope.savedCards = Array.prototype.slice.call(StorageService.getSaved(), 0);
         $scope.pairs = [];
         $scope.pairs = $scope.pairOutput($scope.savedCards);

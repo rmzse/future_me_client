@@ -78,7 +78,12 @@ angular.module("futureme.services", [])
   };
 
   var _deleteSaved = function (occupation) {
-    $localStorage.saved_occupations.splice($localStorage.saved_occupations.indexOf(occupation), 1);
+    for(var i=0; i < $localStorage.saved_occupations.length; i++) {
+      if($localStorage.saved_occupations[i].id == occupation.id)
+      {
+        $localStorage.saved_occupations.splice(i,1);
+      }
+    }
   };
 
   return {
