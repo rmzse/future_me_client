@@ -271,6 +271,11 @@ td-card img {
   margin-top: .7vh;
 }
 
+my-lib-suggestion {
+  margin-top: 2vh;
+  margin-right: 2.2vw;
+}
+
 /* Path screen */
 .item.item-trns {
   border-color: rgba(0, 0, 0, 0);
