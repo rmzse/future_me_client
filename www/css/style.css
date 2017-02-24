@@ -100,6 +100,7 @@ td-card img {
 }
 
 .ion-ios-bookmarks {
+  background-image: url('../img/library.png');
   margin-right: 2.9vw;
   border: none;
   background: #595959;
@@ -126,6 +127,7 @@ td-card img {
 
 .button-back {
   margin-top: 0px;
+  color: #fff;
 }
 
 .bar.bar-clear .button {
@@ -164,7 +166,12 @@ td-card img {
   margin-right: 0.6vw;
 }
 
-/*description screen */
+.go-to-library {
+  background-image: url('../img/library.png');
+  background-position: center;
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+}
 
 .ion-footprint {
   background-image: url('../img/footsteps_icon_white_360.png');
@@ -172,6 +179,29 @@ td-card img {
   background-size: 2.5rem;
   background-repeat: no-repeat;
 }
+
+.ion-description{
+  background-image: url('../img/descrlinesw.png');
+  background-position: center;
+  background-size: 2.6rem;
+  background-repeat: no-repeat;
+}
+
+.ion-heart{
+  background-image: url('../img/heart.png');
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
+
+.button-link{
+  background-image: url('../img/linkw.png');
+  background-position: center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
+
+/*description screen */
 
 .pane {
   overflow: hidden;
@@ -187,16 +217,17 @@ td-card img {
   font-size: 1.9rem;
   line-height: 100%;
   padding-left: 2rem;
-  padding-top: 6rem;
+  padding-top: 10vh;
 }
 
 .col-90 {
   color: white;
-  height: 60vh;
+  height: 70vh;
   font-size: 1.28rem;
-  padding-top: 1rem;
-  padding-left: 2rem;
+  margin-left: 7.6vw;
+  padding-right: 5vw;
   overflow: hidden;
+  width: 100%;
 }
 
 .row + .row {
@@ -205,18 +236,20 @@ td-card img {
 }
 
 .button-group_description {
-  margin-top: 2.4vh;
+  margin-top: 3.25vh;
   text-align: center;
 }
 
 .description-subtitle {
   color: ivory;
-  padding-top: 7.2vh;
-  padding-bottom: 1.2vh;
+  margin-top: 3.2vh;
+  margin-bottom: .85vh;
 }
 
-.description-subtext-bold {
-  font-weight: bold;
+.description-ingress {
+  font-weight: 500;
+  font-size: 1.08rem;
+  margin-bottom: 5vh;
 }
 
 .description-rating-text {
@@ -231,6 +264,21 @@ td-card img {
   padding-bottom: 2.4vh;
 }
 
+.my-lib {
+  color: #ffffff;
+  /*opacity: 0.9;*/
+  height: 95%;
+  margin-top: .7vh;
+}
+
+.lib-button-suggestion {
+  margin-top: 2.7vh;
+  margin-right: 4.5vw;
+  height: 5vh;
+}
+
+
+/* Path screen */
 .item.item-trns {
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
@@ -253,7 +301,11 @@ td-card img {
   max-height: 54vh;
 }
 
-/*Libary screen*/
+.path-content {
+  height: 78.6vh;
+}
+
+/*Library screen*/
 
 .screen {
   overflow: hidden;
@@ -267,8 +319,9 @@ lib-screen {
 
 .lib-content {
   background-color: #fff;
-  padding-right: 2.16vw;
-  padding-left: 2.16vw;
+  padding-top: 3vw;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
   overflow: auto;
 }
 
@@ -297,6 +350,8 @@ lib-screen {
   color: #595959;
   font-size: 1.2rem;
   font-weight: bold;
+  text-align: center;
+  text-shadow: none;
 }
 
 .center {
@@ -312,4 +367,31 @@ lib-screen {
 
 .button.button-light {
   color: #fff;
+}
+
+/* Global */
+.header-bar-title {
+  width: 100%;
+  text-align: center;
+  line-height: 1.05;
+  font-size: 1rem;
+  margin-top: 1vh;
+  text-shadow: 1px 1px 3px #333;
+  background-blend-mode: overlay;
+}
+
+h1.header-bar-title {
+  margin-top: 1.5vh;
+}
+
+.body-text{
+  font-size: 1.01rem;
+  text-shadow: 1px 1px 3px #333;
+  background-blend-mode: overlay;
+  font-weight: 500;
+}
+
+ion-content, ion-pane, ion-nav-bar, ion-header-bar, ion-view, body, span, h1, h2, h3, h4, h5, h6, title {
+  src: url("../font/Cabin-Medium.ttf.svg"); !important;
+  text-shadow: 1px 1px 3px #333;
 }
