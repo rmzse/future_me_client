@@ -312,8 +312,9 @@ lib-screen {
 
 .lib-content {
   background-color: #fff;
-  padding-right: 2.16vw;
-  padding-left: 2.16vw;
+  padding-top: 3vw;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
   overflow: auto;
 }
 
@@ -343,6 +344,7 @@ lib-screen {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
+  text-shadow: none;
 }
 
 .center {
