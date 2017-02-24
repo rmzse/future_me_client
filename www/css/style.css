@@ -264,6 +264,13 @@ td-card img {
   padding-bottom: 2.4vh;
 }
 
+.my-lib {
+  color: #ffffff;
+  /*opacity: 0.9;*/
+  height: 95%;
+  margin-top: .7vh;
+}
+
 /* Path screen */
 .item.item-trns {
   border-color: rgba(0, 0, 0, 0);

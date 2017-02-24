@@ -1,7 +1,9 @@
 <ion-pane ng-controller="cardsCtrl" class="background-grey">
   <ion-nav-bar class='bar-clear'>
     <ion-nav-buttons side="right">
-      <button class="ion-ios-bookmarks" go-click="/library"></button>
+      <div class="my-lib" style="margin-top: 2vh; margin-right: 2.5vh;">
+        <img src="../img/library.png" go-click="/library" class="my-lib">
+      </div>
     </ion-nav-buttons>
   </ion-nav-bar>
   <div ng-if="cards.active">

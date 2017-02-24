@@ -2,11 +2,11 @@
   <ion-content scroll="false" class="pane" style="background-image: url('img/{{occupation.image}}');">
     <ion-header-bar class='bar-clear'>
       <div class="buttons">
-        <a class="button icon-left ion-chevron-left button-clear button-back" style="color: #ffffff;  opacity: 0.6;" ng-click="myGoBack()"></a>
+        <a class="button icon-left ion-chevron-left button-clear button-back" style="color: #ffffff;  opacity: 0.75;" ng-click="myGoBack()"></a>
       </div>
       <div class="header-bar-title"><div>Det här gör en<br>{{occupation.title}}</div></div>
-      <div class="buttons">
-        <a class="button icon-right ion-ios-bookmarks button-clear" go-click="/library"></a>
+      <div>
+        <img src="../img/library.png" go-click="/library" class="my-lib">
       </div>
     </ion-header-bar>
     <div class="col-80"><!-- Divider div --></div>
