@@ -180,21 +180,21 @@ td-card img {
   background-repeat: no-repeat;
 }
 
-.ion-description{
+.ion-description {
   background-image: url('../img/descrlinesw.png');
   background-position: center;
   background-size: 2.6rem;
   background-repeat: no-repeat;
 }
 
-.ion-heart{
+.ion-heart {
   background-image: url('../img/heart.png');
   background-position: center;
   background-size: 2rem;
   background-repeat: no-repeat;
 }
 
-.button-link{
+.button-link {
   background-image: url('../img/linkw.png');
   background-position: center;
   background-size: 2rem;
@@ -267,16 +267,15 @@ td-card img {
 .my-lib {
   color: #ffffff;
   /*opacity: 0.9;*/
-  height: 95%;
+  height: 4.7vh;
   margin-top: .7vh;
 }
 
 .lib-button-suggestion {
-  margin-top: 2.7vh;
+  margin-top: 2.4vh;
   margin-right: 4.5vw;
-  height: 5vh;
+  height: 4.7vh;
 }
-
 
 /* Path screen */
 .item.item-trns {
@@ -384,7 +383,7 @@ h1.header-bar-title {
   margin-top: 1.5vh;
 }
 
-.body-text{
+.body-text {
   font-size: 1.01rem;
   text-shadow: 1px 1px 3px #333;
   background-blend-mode: overlay;
@@ -392,6 +391,7 @@ h1.header-bar-title {
 }
 
 ion-content, ion-pane, ion-nav-bar, ion-header-bar, ion-view, body, span, h1, h2, h3, h4, h5, h6, title {
-  src: url("../font/Cabin-Medium.ttf.svg"); !important;
+  src: url("../font/Cabin-Medium.ttf.svg");
+!important;
   text-shadow: 1px 1px 3px #333;
 }
