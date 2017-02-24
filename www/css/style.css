@@ -271,10 +271,12 @@ td-card img {
   margin-top: .7vh;
 }
 
-my-lib-suggestion {
-  margin-top: 2vh;
-  margin-right: 2.2vw;
+.lib-button-suggestion {
+  margin-top: 2.7vh;
+  margin-right: 4.5vw;
+  height: 5vh;
 }
+
 
 /* Path screen */
 .item.item-trns {
